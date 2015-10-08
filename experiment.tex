@@ -12,18 +12,34 @@ The LHC is home to several experiments -- the general-purpose high-luminosity de
 
 The Compact Muon Solenoid (CMS) detector is a hermetic general-purpose detector at the LHC, gathering data from the collision of proton-proton and heavy ion beams to study a wide range of physics processes. This experiment is characterized by a powerful superconducting solenoid magnet that produces a 4 T magnetic field; the paths of charged particles are bent by the magnetic field, allowing their momenta to be accurately reconstructed from their trajectories. Quadrupole magnets bend the two proton beams passing through the LHC ring to intersect and collide at the interaction point (IP) in the center of the CMS detector, and the particles produced in the collision pass through and are recorded by the layered system of cylindrical subdetectors that comprise the CMS detector. At the center of the ensemble is a silicon tracker subdetector for reconstructing accurately the momenta of charged particles. Encircling it is the electromagnetic calorimeter, a homogenous calorimeter that uses scintillating lead tungstate crystals to reconstruct electrons and photons with high energy resolution. Outside the electromagnetic calorimeter is the hadron calorimeter, a sampling calorimeter with alternating layers of brass and scintillator that measures the energy deposited in hadronic showers. The solenoid magnet is located outside the hadronic calorimeter, together with an iron yoke system that provides a return flux for the magnetic field. The outermost layer of the CMS detector is the muon tracking system for identifying and reconstructing the trajectories of muons. The solenoid magnet and the various subdetectors of CMS will be described in more detail in the rest of this chapter, followed by considerations regarding the mechanisms for data collection by CMS. A more complete description of the detector can be found at~\cite{1748-0221-3-08-S08004}; unless otherwise specified, all information in this chapter is derived from this source.
 
-\subsection{Tracker\label{sec:cmstracker}}
+\subsection{Tracker\label{sec:cms-tracker}}
+
+5.8 m in length along the z axis and 2.5 m in diameter, the tracker detector is the innermost layer of the CMS detector system. Its purpose is to reconstruct the paths and momenta of charged particles with transverse momentum 1 GeV and upwards, and to reconstruct accurately the positions of secondary vertices, which are displaced from the point of collision and generally are a characteristic signature of long-lived particles such as from heavy-flavour physics processes. Being closest to the interaction point and thus receiving the highest particle fluence of any part of the detector, the tracker detector has been designed to perform in a crowded environment, with a fluence on the order of thousands of particles passing through its volume every 25 ns when the LHC is running at its design luminosity. Thus, the tracker has been designed with these challenges in mind in order to yield good position and time resolution.
+
+The tracker detector is composed of two subdetectors. The one closest to the beam line is the pixel detector, with three concentric cylindrical barrel layers complemented by two endcap disks on either side of the interaction point. Its sensors are 100 $\mu$m x 150 $\mu$m pixels, which receive an occupancy on the order of $10^{-4}$ per pixel per bunch crossing. The second and larger subdetector is the silicon strip tracker, whose sensors are silicon strips; since it is located at larger radii than the pixel detector, the fluence of particles that reach it is lower and thus the granularity of the silicon strips can be considerably lower than that of the pixel detector, with strip areas ranging from 10 cm x 80 $\mu$m at intermediate radii for the inner strip tracker (20 $<$ r $<$ 55 cm) and 25 cm x 180 $\mu$m for the outer strip tracker (55 $<$ r $<$ 110 cm), resulting in an occupancy of about 2-3\% for the inner tracker and 1\% for the outer tracker. In total, the CMS tracker detector is comprised of 200 $m^{2}$ of active silicon sensors, providing a coverage of up to $\abs{\eta}$ $<$ 2.5.
+
+The support structures that hold the sensors in position are designed to minimize the amount of material used, since energy loss via multiple scattering and extraneous particles produced by nuclear interactions, gamma conversions, and bremsstrahlung in the supporting material can all interfere with tracking efficiency. Since the tracker detector receives the highest irradiation due to its proximity to the beam line and the interaction point, radiation-hard sensors and electronics are required; also, an efficient system system of cooling tubes carrying chilled liquid $C_{6}F_{14}$ pervades the tracker volume, keeping it at or below -10 C during operation, thus minimizing radiation damage to the sensors caused either by direct irradiation or by the annealing of radiation-induced defects in the silicon crystal structure through thermal agitation.
+
+\subsubsection{Pixel detector\label{sec:cms-pixel}}
+% barrel and disks, design of sensors, electronics, readout
+
+\subsubsection{Silicon strip detector\label{sec:cms-strips}}
+% barrel and disks, design of sensors, electronics, readout
 
 \subsection{Electromagnetic calorimeter\label{sec:cms-ecal}}
+% crystals, photodetectors, readout, preshower
 
 \subsection{Hadronic calorimeter\label{sec:cms-hcal}}
+% HB, HE, HO, HF -- scintillator, absorber, readout
 
 \subsection{Magnet\label{sec:cms-magnet}}
+% solenoid, yoke, cryogenics, vacuum system
 
 \subsection{Muon system\label{sec:cms-muon}}
+% DT, CSC, RPC, readouts for all
 
-\section{Data acquisition and analysis at CMS\label{sec:cms-daq}}
-
-\subsection{Triggers\label{sec:cms-triggers}}
+\section{Triggers and data acquisition\label{sec:cms-triggerdaq}}
+% rationale, L1, HLT; muon, calorimeter, global
 
 \subsection{Event reconstruction\label{sec:cms-reco}}
+% Particle Flow (list all types of particles, focus on muons, taus, jets, MET)
