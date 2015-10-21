@@ -27,9 +27,9 @@ The pixel detector is the innermost layer of the tracker detector, with three co
 
 In the barrel, the sensors are arranged 2 x 8 on rectangular modules (or 1 x 8 along the edges of the half-cylinders). In each endcap half-disk, 12 trapezoidal support structures called blades hold the sensors, which come in arrangements of five different plaquette sizes (1 x 2, 2 x 3, 2 x 4, 1 x 5, and 2 x 5) in order to achieve full coverage of the wedge-shaped area of the blade. Altogether, the pixel detector covers a pseudorapidity range of $\abs{\eta}$ $<$ 2.5.
 
-Due to the 4 T magnetic field along the z axis through the tracker volume, the charge carriers in the silicon pixels undergo a signficant Lorentz drift (roughly 32 degrees for electrons) and end up being spread over adjacent pixels. Interpolation between signals from multiple neighbouring pixels can be used to improve hit resolution. In the barrel, the normal direction of the pixel cells points along the radial direction, perpendicular to the magnetic field, so the Lorentz drift is along the r$\phi$ direction. To induce charge sharing in the pixel endcaps, whose normal points along the magnetic field axis, the blades are rotated at a 20 degree angle about their radial axis, yielding a turbine-like geometry.
-
-The pixel sensors consist of 52 x 80 high-dose $n$-type pixels implanted in a high-resistance $n$-type substrate on a sensor plate. Each pixel is bump-bonded onto a pixel cell in a readout chip (ROC) connected to the sensor plate. The ROC collects and amplifies the analog signals from the pixels and sends them to be digitized and collected.
+The pixel sensors consist of 52 x 80 high-dose $n$-type pixels implanted in a high-resistance $n$-type substrate of 320 $\mu$m thickness on a sensor plate. Each pixel is bump-bonded onto a readout chip (ROC) connected to the sensor plate. The ROC collects and amplifies the analog signals from the pixels, storing them in a buffer until the arrival of the appropriate readout control and clock signals causes it to pass the sensor signal on to the readout system.
+ 
+When a charged particle passes through a silicon sensor, it induces charge carriers in the n-doped silicon substrate; traveling towards the pixels to be collected, electrons undergo a signficant Lorentz drift (roughly 32 degrees) due to the 4 T magnetic field along the z axis through the tracker volume, and thus the signal current ends up being spread over adjacent pixels. Interpolation between signals from multiple neighbouring pixels can be used to improve hit resolution. In the barrel, the normal direction of the pixel cells points along the radial direction, perpendicular to the magnetic field, so the Lorentz drift is along the r$\phi$ direction. To induce charge sharing in the pixel endcaps, whose normal points along the magnetic field axis, the blades are rotated at a 20 degree angle about their radial axis in a turbine-like geometry.
 
 \subsubsection{Silicon strip detector\label{sec:cms-strips}}
 % barrel and disks, design of sensors, electronics, readout
@@ -42,6 +42,8 @@ The pixel sensors consist of 52 x 80 high-dose $n$-type pixels implanted in a hi
 
 \subsection{Magnet\label{sec:cms-magnet}}
 % solenoid, yoke, cryogenics, vacuum system
+
+The superconducting solenoid magnet of CMS encloses the calorimeters and tracker detector inside a cylindrical bore 6.3 m in diameter and 12.5 m long, weighing 220 tonnes. The solenoid is composed of a 4-layer winding of coils made of NbTi, which is mechanically reinforced and self-stabilized by being mixed with an aluminium alloy, an innovative method that makes the coils both conductors and their own structural support. At full current, the solenoid carries 19.14 kA, producing a nearly uniform 4 T magnetic field through the volume enclosed by the bore and resulting in 2.6 GJ of stored energy. The magnetic flux is returned through an iron yoke, consisting of a system of barrel wheels and endcap disks arranged outside the volume of the solenoid in a cylindrical pattern and interspersed with the muon tracking system, which will be described in the next section.
 
 \subsection{Muon system\label{sec:cms-muon}}
 % DT, CSC, RPC, readouts for all
