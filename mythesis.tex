@@ -13,7 +13,7 @@
 \usepackage{graphicx}
 \usepackage{siunitx}
 %\usepackage[square,comma,numbers,sort&compress]{natbib}
-%\usepackage{hypernat}
+\usepackage{hypernat}
 % Other useful packages to try
 \usepackage{amsmath}
 \usepackage{amssymb}
@@ -105,23 +105,22 @@
 
 \newcommand{\bibfont}{\singlespacing}
 % need this command to keep single spacing in the bibliography when using natbib
-
-%\bibliographystyle{unsrtnat}
-\bibliographystyle{fdm}
+\bibliographystyle{unsrt}
+%\bibliographystyle{plainnat}
+%\bibliographystyle{fdm}
 %many other bibliography styles are available (IEEEtran, mla, etc.). Use one appropriate for your field.
 
 \makeintropages %Processes/produces the preliminary pages
 
 \include{intro}
 \include{experiment}
-%\include{search-strategy}
-%event selection and its rationale
-%\include{background-modelling}
-% bkg modelling, rationale, and validation
-%\include{results and interpretation}
-% observed data vs expectation, limits (incl. explanation of CLs)
+\include{strategy} %motivations
+\include{evtsel} %event selection and its rationale
+\include{bkg} % bkg modelling, rationale, and validation
+\include{results} % observed data vs expectation, limits (incl. explanation of CLs)
+\include{conclusions}
 
-\bibliography{mythesis}
+\bibliography{thesisbib}
 
 % The UMI abstract uses square brackets!
 \UMIabstract[The abstract that is submitted to UMI must be formatted as shown in the example here. The body of the abstract cannot exceed 350 words. It should be in typewritten form, double-spaced, and on bond paper. It is important to write an abstract that gives a clear description of the content and major divisions of the dissertation, since UMI will publish the abstract exactly as submitted. Students completing their requirements under Plan A should provide extra copies of the typed summary for use by the dissertation committee during the examination.
