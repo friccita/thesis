@@ -3,6 +3,15 @@
 \section{Search signature\label{sec:signature}}
 The signal studied in this analysis is the production of an SM-like Higgs boson $H$ followed by its decay to a pair of lighter pseudoscalar Higgs bosons $a$, each of which decays to a pair of taus. Due to the large mass difference between $H$ and $a$, the $a$'s are produced with a large boost. Four production channels (Figure~\ref{fig:signatures}) for the $H$ are considered: $W$ and $Z$ associated production (WH and ZH), where a high-$p_T$ isolated muon from the vector boson decay provides a convenient trigger, gluon fusion (ggH), and vector boson fusion (VBF). The analysis was originally optimized for the WH mode but is sensitive to the ggH+VBF mode due to its large cross section. Since no forward jet tagging is done, the analysis is only sensitive to the sum of ggH and VBF, not each mode individually.  One of the $\tau\tau$ pairs is identified via the $\tau_{\mu}\tau_{\text{had}}$ decay topology, while no selection is made on the other $\tau\tau$ pair. The most significant backgrounds to the signal are expected to be SM $W$ and Drell-Yan production, where the $W$ and $Z$ decay to muons; $t\bar{t}$ with one or two muons in the final state; and heavy flavor QCD. In all of these backgrounds, the boosted $\tau_{\mu}\tau_{\text{had}}$ pair is faked by a jet.
 
+\begin{figure}[hbtp]
+  \begin{center}
+    \includegraphics[width=\cmsFigWidth]{figures/FeynWH_ellnu4tau}
+    \includegraphics[width=\cmsFigWidth]{figures/FeynggH_aa_4tau}
+    \caption{Feynman diagrams of signal processes. (\cmsLeft) $W$ associated production channel. (\cmsRight) Gluon fusion production channel.}
+    \label{fig:signatures}
+  \end{center}
+\end{figure}
+
 \section{Motivations\label{sec:motivations}}
 
 \subsection{Light pseudoscalars\label{sec:lighta}}
@@ -20,7 +29,7 @@ The techniques appropriate for detecting a Higgs-pair decay mode depend cruciall
 \subsection{Semileptonic di-tau decays\label{sec:semileptonic}}
 This analysis explores the current level of sensitivity to the $4\tau$ final state, and techniques are developed for isolating this final state from backgrounds. In particular, at least one of the tau pairs produced in the decays of the light Higgs bosons is required to decay semileptonically as $\tau_{\mu}\tau_{\text{had}}$. Requiring at least one hadronic tau decay is intended to maximize statistics, due to the higher branching ratio for hadronic tau decays -- 64.76\% compared to 17.41\% and 17.83\% for decays to muons or electrons respectively~\cite{Agashe:2014kda}. However, the choice for the other tau not to decay hadronically was motivated by issues with the reconstruction of boosted tau pairs.
 
-Because of the large mass difference between the \PH and $\cmsSymbolFace{a}$, the final-state tau pairs are highly collimated, resulting in the overlap of their decay products. This spoils the isolation of the individual taus and renders their reconstruction difficult or impossible by standard means. In order to reconstruct boosted $\tau\tau$ pairs, a modified version of the standard hadron plus strips (HPS)~\cite{CMS:2011msa} tau reconstruction procedure has been developed for this analysis. This method, described fully in Section~\ref{sec:evtsel-jetcleaning}, involves identifying and removing a leptonic tau decay candidate (muon or electron) from the PF jet used to seed the hadronic tau decay reconstruction. As this method has been successful in recovering hadronic tau ID efficiency, this analysis has thus focused on the reconstruction of semileptonic boosted tau decays -- in particular, only $\tau_{\mu}\tau_{\text{had}}$ decays, due to the relative ease and cleanness with which low-p$_T$ muons are reconstructed at CMS compared to electrons.
+Because of the large mass difference between the \PH and $\cmsSymbolFace{a}$, the final-state tau pairs are highly collimated, resulting in the overlap of their decay products. This spoils the isolation of the individual taus and renders their reconstruction difficult or impossible by standard means. In order to reconstruct boosted $\tau\tau$ pairs, a modified version of the standard hadron plus strips (HPS)~\cite{CMS:2011msa} tau reconstruction procedure has been developed for this analysis. This method, described fully in Section~\ref{sec:evtsel-jetcleaning}, involves identifying and removing a leptonic tau decay candidate (muon or electron) from the PF jet used to seed the hadronic tau decay reconstruction. As this method has been successful in recovering hadronic tau ID efficiency, this analysis has thus focused on the reconstruction of semileptonic boosted tau decays -- in particular, only $\tau_{\mu}\tau_{\text{had}}$ decays, due to the relative ease and cleanness with which low-$p_T$ muons are reconstructed at CMS compared to electrons.
 
 % Explain:
 % hadronic tau decay has larger branching ratio --> maximize statistics

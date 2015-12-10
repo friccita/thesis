@@ -18,19 +18,6 @@
 	Title = {Introduction to Elementary Particle Physics},
 	Year = {2008}}
 
-@book{MuonTDR,
-	Author = {The CMS Collaboration},
-	Address = {Geneva},
-	Collaboration = {CMS Collaboration},
-	Date-Modified = {2015-12-05 08:43:27 +0000},
-	Keywords = {DetectorPaper},
-	Publisher = {CERN},
-	Series = {Technical Design Report CMS},
-	Title = {The CMS muon project: Technical Design Report},
-	Url = {https://cds.cern.ch/record/343814},
-	Year = {1997},
-	Bdsk-Url-1 = {https://cds.cern.ch/record/343814}}
-
 @article{1748-0221-3-08-S08001,
 	Author = {Lyndon Evans and Philip Bryant},
 	Date-Added = {2015-10-06 01:54:05 +0000},
@@ -58,6 +45,30 @@
 	Volume = {3},
 	Year = {2008},
 	Bdsk-Url-1 = {http://stacks.iop.org/1748-0221/3/i=08/a=S08004}}
+
+@book{MuonTDR,
+	Author = {The CMS Collaboration},
+	Address = {Geneva},
+	Collaboration = {CMS Collaboration},
+	Date-Modified = {2015-12-05 08:43:27 +0000},
+	Keywords = {DetectorPaper},
+	Publisher = {CERN},
+	Series = {Technical Design Report CMS},
+	Title = {The CMS muon project: Technical Design Report},
+	Url = {https://cds.cern.ch/record/343814},
+	Year = {1997},
+	Bdsk-Url-1 = {https://cds.cern.ch/record/343814}}
+
+% Particle Flow
+@article{CMS:2010eua,
+      key            = "925292",
+      title          = "{Commissioning of the Particle-Flow reconstruction in
+                        Minimum-Bias and Jet Events from pp Collisions at 7 TeV}",
+      collaboration  = "CMS",
+      year           = "2010",
+      reportNumber   = "CMS-PAS-PFT-10-002",
+      SLACcitation   = "%%CITATION = CMS-PAS-PFT-10-002 ETC.;%%",
+      }
 
 @article{Aad:2012tfa,
       author         = "Aad, Georges and others",
@@ -454,14 +465,375 @@
 }
 
 % Tau ID PAS
-@techreport{CMS:2011msa,
-      title         = "{Tau identification in CMS}",
-      institution   = "CERN",
-      Collaboration = "CMS Collaboration",
-      address       = "Geneva",
-      number        = "CMS-PAS-TAU-11-001",
-      year          = "2011",
-      reportNumber  = "CMS-PAS-TAU-11-001",
-      url           = "https://cds.cern.ch/record/1337004",
+@article{CMS:2011msa,
+      key            = "925248",
+      title          = "{Tau identification in CMS}",
+      collaboration  = "CMS",
+      year           = "2011",
+      reportNumber   = "CMS-PAS-TAU-11-001",
+      SLACcitation   = "%%CITATION = CMS-PAS-TAU-11-001 ETC.;%%",
 }
 
+% Newer Tau ID paper
+@misc{Tau14001,
+      author={{CMS Collaboration}},
+      title="{Reconstruction and identification of tau leptons at CMS during LHC Run 1}",
+      URL={https://cds.cern.ch/record/2023889/files/TAU-14-001-paper-v2.pdf}
+}
+
+% HLT menus website
+@misc{HLTMenus,
+author={{CMS Collaboration}},
+title = {CMS HLT configurations},
+URL = {http://j2eeps.cern.ch/cms-project-confdb-hltdev/browser/}
+}
+
+@article {springerlink:10.1007/JHEP06(2011)128,
+   author = {Alwall, Johan and Herquet, Michel and Maltoni, Fabio and Mattelaer, Olivier and Stelzer, Tim},
+   affiliation = {Theoretical Physics Department, Fermi National Accelerator Laboratory, P.O. Box 500, Batavia, IL 60510, U.S.A.},
+   title = {MadGraph 5: going beyond},
+   journal = {JHEP},
+   publisher = {Springer Berlin / Heidelberg},
+   keyword = {Physics and Astronomy},
+   pages = {1--40},
+   volume = {2011},
+   issue = {6},
+   url = {http://dx.doi.org/10.1007/JHEP06(2011)128},
+   doi = {10.1007/JHEP06(2011)128},
+   year = {2011}
+}
+
+% PREP website
+@misc{PREP,
+author={{CMS Collaboration}},
+title = {PREP: Production and Reprocessing management tool},
+URL = {http://cms.cern.ch/iCMS/jsp/mcprod/admin/requestmanagement.jsp?pwg=JME&campid=Summer12}
+}
+
+% Twiki of SM process cross sections at 8 TeV
+@misc{8TeVTwiki,
+author={{CMS Collaboration}},
+title = {Standard Model CrossSections at 8TeV},
+URL = {https://twiki.cern.ch/twiki/bin/viewauth/CMS/StandardModelCrossSectionsat8TeV}
+}
+
+
+% Tau ID Twiki
+@misc{CMS:tauidtwiki,
+      title = "{https://twiki.cern.ch/twiki/bin/view/CMSPublic/SWGuidePFTauID}",
+      URL = "https://twiki.cern.ch/twiki/bin/view/CMSPublic/SWGuidePFTauID#Tau_ID_2014_preparation_for_AN1"
+      }
+
+% Tau Uncertainty Recommendation Twiki
+@misc{CMS:tauuncertaintytwiki,
+      title = "{https://twiki.cern.ch/twiki/bin/viewauth/CMS/TauIDRecommendation}",
+      URL = "https://twiki.cern.ch/twiki/bin/viewauth/CMS/TauIDRecommendation#Systematic_Uncertainties"
+      }
+
+% Reco Tau Quality Cuts
+@misc{CMS:taudzcut,
+      title = "RecoTauTag/RecoTau/python/PFRecoTauQualityCuts_cfi.py",
+      URL = "https://github.com/cms-sw/cmssw/blob/743bde9939bbc4f34c2b4fd022cfb980314f912a/RecoTauTag/RecoTau/python/PFRecoTauQualityCuts_cfi.py"
+     }
+
+% Particle Flow
+@article{CMS:2010eua,
+      key            = "925292",
+      title          = "{Commissioning of the Particle-Flow reconstruction in
+                        Minimum-Bias and Jet Events from pp Collisions at 7 TeV}",
+      collaboration  = "CMS",
+      year           = "2010",
+      reportNumber   = "CMS-PAS-PFT-10-002",
+      SLACcitation   = "%%CITATION = CMS-PAS-PFT-10-002 ETC.;%%",
+      }
+
+%Reference to HPS isolation
+@TECHREPORT{CMS_AN_2010-082,
+     AUTHOR       = "Bachtis, M. and Dasu, S. and Savin, A.",
+     TITLE        = "Prospects for measurement of $\sigma(pp \rightarrow Z)\cdot B(Z \rightarrow \tau^{+}\tau^{-})$ with {CMS} in pp collisions at $\sqrt{s}$ = 7 TeV",
+     COLLABORATION = "CMS",
+     INSTITUTION = "CERN",
+     TYPE      = "CMS Note",
+     NUMBER       = "2010/082",
+     YEAR         = "2010",
+     URL= "http://cms.cern.ch/iCMS/jsp/openfile.jsp?tp=draft&files=AN2010_082_v1.pdf"
+     }
+
+%Approved TAU results
+@misc{CMS:approvedTAUResults,
+      title = "CMS Particle Flow and Tau Identification Results",
+      URL = "https://twiki.cern.ch/twiki/bin/view/CMSPublic/PhysicsResultsPFT"
+     }
+
+% Muon ID Twiki
+@misc{CMS:muonidtwiki,
+      title = "{https://twiki.cern.ch/twiki/bin/view/CMSPublic/SWGuideMuonId}",
+      URL = "https://twiki.cern.ch/twiki/bin/view/CMSPublic/SWGuideMuonId"
+      }
+      
+% Muon HLT Twiki
+@misc{CMS:muonhlttwiki,
+      title = "{https://twiki.cern.ch/twiki/bin/viewauth/CMS/MuonHLT}",
+      URL = "https://twiki.cern.ch/twiki/bin/viewauth/CMS/MuonHLT#SingleMu_Efficiency"
+      }
+
+%2012 muon reference efficiencies
+@misc{CMS:muonrefeffstwiki,
+title = "{https://twiki.cern.ch/twiki/bin/view/CMS/MuonReferenceEffs}",
+URL = "https://twiki.cern.ch/twiki/bin/view/CMS/MuonReferenceEffs"
+}
+
+% Loose Muon Isolation working point used by WHtobb
+@article{CMS:cya,
+      key            = "1230270",
+      title          = "{Search for the standard model Higgs boson produced in
+                        association with W or Z bosons, and decaying to bottom
+                        quarks for HCP 2012}",
+      collaboration  = "CMS",
+      year           = "2012",
+      reportNumber   = "CMS-PAS-HIG-12-044",
+      SLACcitation   = "%%CITATION = CMS-PAS-HIG-12-044 ETC.;%%",
+}
+
+% Soft Muon ID used by CMS BPH
+@article{CMS:2010uta,
+      key            = "925282",
+      title          = "{J/Psi prompt and non-prompt cross sections in pp
+                        collisions at sqrt(s) = 7 TeV}",
+      collaboration  = "CMS",
+      year           = "2010",
+      reportNumber   = "CMS-PAS-BPH-10-002",
+      SLACcitation   = "%%CITATION = CMS-PAS-BPH-10-002 ETC.;%%",
+}
+
+% Muon Uncertainties Twiki
+@misc{CMS:muonuncertaintytwiki,
+      title = "{https://twiki.cern.ch/twiki/bin/viewauth/CMS/MuonReferenceEffs}",
+      URL = "https://twiki.cern.ch/twiki/bin/viewauth/CMS/MuonReferenceEffs#Note_on_uncertainties"
+      }
+
+% PF Electron cuts from H-->ZZ-->4l
+@article{Chatrchyan:2013mxa,
+      author         = "Chatrchyan, Serguei and others",
+      title          = "{Measurement of the properties of a Higgs boson in the
+                        four-lepton final state}",
+      collaboration  = "CMS",
+      journal        = "Phys. Rev.",
+      volume         = "D89",
+      year           = "2014",
+      number         = "9",
+      pages          = "092007",
+      doi            = "10.1103/PhysRevD.89.092007",
+      eprint         = "1312.5353",
+      archivePrefix  = "arXiv",
+      primaryClass   = "hep-ex",
+      reportNumber   = "CMS-HIG-13-002, CERN-PH-EP-2013-220",
+      SLACcitation   = "%%CITATION = ARXIV:1312.5353;%%"
+}
+% PF Electron SF Uncertainties Twiki
+@misc{CMS:egammauncertaintytwiki,
+      title = "https://twiki.cern.ch/twiki/bin/view/Main/EGammaScaleFactors2012",
+      URL = "https://twiki.cern.ch/twiki/bin/view/Main/EGammaScaleFactors2012#2012_8_TeV_Jan22_Re_recoed_data"
+}
+
+%CSV algorithm
+@techreport{Weiser:927399,
+      author        = "Weiser, Christian",
+      title         = "{A Combined Secondary Vertex Based B-Tagging Algorithm in
+                       CMS}",
+      institution   = "CERN",
+      address       = "Geneva",
+      number        = "CMS-NOTE-2006-014",
+      month         = "Jan",
+      year          = "2006",
+}
+
+%BTV POG working point twiki
+@misc{CMS:btvpogtwiki,
+      title = "{https://twiki.cern.ch/twiki/bin/viewauth/CMS/BTagPerformanceOP}",
+      URL = "https://twiki.cern.ch/twiki/bin/viewauth/CMS/BTagPerformanceOP#B_tagging_Operating_Points_for_5"
+      }
+
+%B-tagging scale factor uncertainty
+
+@misc{CMS:btaguncertaintytwiki,
+      title = "{https://twiki.cern.ch/twiki/bin/viewauth/CMS/BTagSFMethods}",
+      URL = "https://twiki.cern.ch/twiki/bin/viewauth/CMS/BTagSFMethods"
+      }
+
+%N-subjettiness paper by Thaler and Van Tilburg
+@article{Thaler:2010tr,
+      author         = "Thaler, Jesse and Van Tilburg, Ken",
+      title          = "{Identifying Boosted Objects with N-subjettiness}",
+      journal        = "JHEP",
+      volume         = "1103",
+      pages          = "015",
+      doi            = "10.1007/JHEP03(2011)015",
+      year           = "2011",
+      eprint         = "1011.2268",
+      archivePrefix  = "arXiv",
+      primaryClass   = "hep-ph",
+      reportNumber   = "MIT-CTP-4191",
+      SLACcitation   = "%%CITATION = ARXIV:1011.2268;%%",
+}
+
+% Luminosity uncertainty
+@techreport{CMS-PAS-LUM-13-001,
+      title         = "{CMS Luminosity Based on Pixel Cluster Counting - Summer
+                       2013 Update}",
+      institution   = "CERN",
+      collaboration = "CMS",
+      address       = "Geneva",
+      number        = "CMS-PAS-LUM-13-001",
+      year          = "2013",
+}
+
+% MET systematic uncertainty
+@misc{METuncertainty,
+author={{CMS Collaboration}},
+title={MET Systematics Tools Twiki},
+url = {https://twiki.cern.ch/twiki/bin/view/CMSPublic/SWGuidePATTools#MET_Systematics_Tools}
+}
+
+% Pileup reweighting
+@misc{PU-Twiki,
+author={{CMS Collaboration}},
+title={Pileup Reweighting Utilities Twiki},
+url = {https://twiki.cern.ch/twiki/bin/viewauth/CMS/PileupMCReweightingUtilities}
+}
+
+% Pileup uncertainty
+@misc{PU-Systematic,
+author={{CMS Collaboration}},
+title={Pileup Systematic Errors Twiki},
+url = {https://twiki.cern.ch/twiki/bin/viewauth/CMS/PileupSystematicErrors}
+}
+
+
+% Anti-kt jet clustering
+@article{1126-6708-2008-04-063,
+  author={Matteo Cacciari and Gavin P. Salam and Gregory Soyez},
+  title={The anti-\kt jet clustering algorithm},
+  journal={JHEP},
+  volume={2008},
+  number={04},
+  pages={063},
+  doi={10.1088/1126-6708/2008/04/063},
+  year={2008}
+}
+
+% PF Jets, Taus, MET
+@TECHREPORT{PF_algo,
+  author={{CMS Collaboration}},
+  collaboration={CMS},
+  institution={CERN},
+  title={Particle-Flow Event Reconstruction in CMS and Performance for Jets, Taus, and MET},
+  year={2009},
+  url={https://cdsweb.cern.ch/record/1194487},
+  type={{CMS} {P}hysics {A}nalysis {S}ummary}
+}
+
+% Jet energy calibration, pT resolution
+@article{1748-0221-6-11-P11002,
+  collaboration={CMS},
+  author={S. Chatrchyan and others},
+  title={Determination of jet energy calibration and transverse momentum resolution in CMS},
+  journal={JINST},
+  volume={6},
+  number={11},
+  pages={P11002},
+  doi={10.1088/1748-0221/6/11/P11002},
+  year={2011}
+}
+
+@article{1748-0221-7-10-P10002,
+  author={CMS},
+  title={Performance of CMS muon reconstruction in pp collision events at $\sqrt{s}$ = 7 TeV},
+  journal={Journal of Instrumentation},
+  volume={7},
+  number={10},
+  pages={P10002},
+  doi={doi:10.1088/1748-0221/7/10/P10002},
+  year={2012}
+}
+
+@article{1748-0221-8-04-P04013,
+  author={The CMS collaboration},
+  title={Identification of b-quark jets with the CMS experiment},
+  journal={Journal of Instrumentation},
+  volume={8},
+  number={04},
+  pages={P04013},
+  doi={doi:10.1088/1748-0221/8/04/P04013},
+  year={2013}
+}
+
+@article{1126-6708-2006-05-026,
+  author={Torbj\"{o}rn Sj\"{o}strand and Stephen Mrenna and Peter Skands},
+  title={PYTHIA 6.4 physics and manual},
+  journal={JHEP},
+  volume={2006},
+  number={05},
+  pages={026},
+  doi={doi:10.1088/1126-6708/2006/05/026},
+  year={2006}
+}
+
+@article {springerlink:10.1140/epjc/s10052-011-1554-0,
+   author = {Cowan, Glen and Cranmer, Kyle and Gross, Eilam and Vitells, Ofer},
+   affiliation = {Physics Department, Royal Holloway, University of London, Egham, TW20 0EX UK},
+   title = {Asymptotic formulae for likelihood-based tests of new physics},
+   journal = {Eur. Phys. J. C},
+   publisher = {Springer Berlin / Heidelberg},
+   keyword = {Physics and Astronomy},
+   pages = {1--19},
+   volume = {71},
+   issue = {2},
+   doi = {10.1140/epjc/s10052-011-1554-0},
+   year = {2011}
+}
+
+% PREP website
+@misc{LHCHXSWG,
+author={LHC Higgs Cross Sections Working Group},
+title = {SM Higgs production cross sections at $\sqrt{s}$ = 8 TeV},
+URL = {https://twiki.cern.ch/twiki/bin/view/LHCPhysics/CERNYellowReportPageAt8TeV}
+}
+
+@article{Ko11,
+author={Ko, P. and Lee, Jungil and Yu, Chaehyun},
+title={Inclusive double-quarkonium production at the Large Hadron Collider},
+journal={JHEP},
+volume={2011},
+number={1},
+pages={70},
+doi={doi:10.1007/JHEP01(2011)070},
+year={2011}
+}
+
+@article{Gang13,
+author={Gang, Li and Wen-Gan, Ma and Mao, Song and Ren-You, Zhang and Jian-You, Guo},
+title={Associated production of $\Upsilon$(1S)W at LHC in next-to-leading order QCD},
+journal={Journal of High Energy Physics},
+volume={2013},
+number={1},
+pages={34},
+doi={doi:10.1007/JHEP01(2013)034},
+year={2013}
+}
+
+% The ditau paper that started it all
+@article{Englert:2011iz,
+      author         = "Englert, Christoph and Roy, Tuhin S. and Spannowsky,
+                        Michael",
+      title          = "{Ditau jets in Higgs searches}",
+      journal        = "Phys.Rev.",
+      volume         = "D84",
+      pages          = "075026",
+      doi            = "10.1103/PhysRevD.84.075026",
+      year           = "2011",
+      eprint         = "1106.4545",
+      archivePrefix  = "arXiv",
+      primaryClass   = "hep-ph",
+      SLACcitation   = "%%CITATION = ARXIV:1106.4545;%%",
+}
