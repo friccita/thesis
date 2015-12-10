@@ -693,6 +693,7 @@
 \newcommand\appendixname{Appendix}
 \newcommand\abstractname{Abstract}
 \newcommand\acknowledgename{Acknowledgments}
+\newcommand\prefacename{Preface}
 \newcommand\dedicationname{Dedication}
 \DeclareOldFontCommand{\rm}{\normalfont\rmfamily}{\mathrm}
 \DeclareOldFontCommand{\sf}{\normalfont\sffamily}{\mathsf}
@@ -893,6 +894,28 @@
       \ColumnRestore
    \fi\newpage
 }
+\newif\if@pref
+\def\@preface{}
+\newcommand\preface[1]{\@preftrue\def\@preface{#1}}
+\newcommand\@makeprefheading{%
+  {
+    \centering
+    \textsc{\large \prefacename}
+    \vskip 12pt
+  }
+}
+\newcommand\@makepreface{%
+   \if@pref
+      \@mkboth{\prefacename}{\prefacename}
+      \addcontentsline{toc}{section}{\prefacename}%
+      \ColumnSaveHeading{\@makeprefheading}
+      \par
+      \renewcommand\baselinestretch{\@spacing}\@normalsize
+      \noindent \normalsize \normalfont \@preface
+      \vfill
+      \ColumnRestore
+   \fi\newpage
+}
 \newcommand\makeintropages{%
   % Preliminary page style (lowercase roman numbers at bottom of page)
   \pagenumbering{roman}\pagestyle{prelim}
@@ -915,6 +938,7 @@
   \listoftables\newpage
   \@makeabstractpage{\@doublespacing}
   \@makeacknowledgments
+  \@makepreface
   \@prelimpagesfalse\newpage % end of preliminary pages, start a new page
   \if@twoside
      \ifthenelse{\isodd{\value{page}}}%
