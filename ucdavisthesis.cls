@@ -934,8 +934,8 @@
   \@makecopyrightpage
   \@makededication
   \tableofcontents
-  \listoffigures\newpage
-  \listoftables\newpage
+%  \listoffigures\newpage
+%  \listoftables\newpage
   \@makeabstractpage{\@doublespacing}
   \@makeacknowledgments
   \@makepreface

@@ -21,7 +21,7 @@ A brief list of the preselection cuts is as follows:
 	\item Requirement of consistency with the primary vertex
 \end{itemize}
 
-Finally, events are classified into one of two bins: low transverse mass M$_{\text{T}} \le$ 50 GeV or high transverse mass M$_{\text{T}} >$ 50 GeV, where M$_{\text{T}} = \sqrt{2p_{T}^{\text{Trig}\mu}\ETslash(1 - \cos{\Delta\phi(\text{Trig}\mu, \ETslash)})}$.  The low-M$_{\text{T}}$ bin is sensitive to gluon fusion and VBF signal production, where there is no real $W$, while the high-M$_{\text{T}}$ bin is optimized for WH production.
+Finally, events are classified into one of two bins: low transverse mass $M_{\text{T}} \le$ 50 GeV or high transverse mass $M_{\text{T}} >$ 50 GeV, where $M_{\text{T}} = \sqrt{2p_{T}^{\text{Trig}\mu}\ETslash(1 - \cos{\Delta\phi(\text{Trig}\mu, \ETslash)})}$.  The low-$M_{\text{T}}$ bin is sensitive to gluon fusion and VBF signal production, where there is no real $W$, while the high-$M_{\text{T}}$ bin is optimized for WH production.
 
 \section{Trigger muon ID\label{sec:evtsel-triggermu}}
 
@@ -187,6 +187,7 @@ In contrast, Figure~\ref{fig:IsoEffVsDR_withFilters} shows $\epsilon_{\text{rel.
 
 After all other selection cuts, the acceptance of the nearby lepton isolation requirement ranges from 87\% to 95\% for ggH pseudoscalar masses 7, 9, 11, 13, and 15 GeV.
 
+%boosted tau ID
 \section{Boosted tau ID\label{sec:evtsel-ditau}}
 
 The signature being sought in this analysis is one in which one of the $a$ decays results in a $\tau_{\mu}\tau_{\text{had}}$ final state, while no constraints are placed on the decay of the taus coming from the other $\cmsSymbolFace{a}$. The hadronic tau identification algorithm employed in this analysis is the HPS algorithm.
@@ -203,6 +204,7 @@ As described in Section~\ref{sec:semileptonic}, the tau pairs produced in the ps
 
 To recover the correct reconstruction of the $\tau_{\text{had}}$, a method has been developed to identify soft muon candidates for the $\tau_{\mu}$ and remove them from the constituents of any jet that contained them, while the remaining jet constituents are then reconstructed into a jet and passed to the HPS algorithm to reconstruct a $\tau_{\text{had}}$ decay. The MUO POG soft muon ID is used to identify $\tau_{\mu}$ candidates.
 
+%soft mu
 \subsection{Soft muon ID\label{sec:evtsel-softmu}}
 
 In addition to the trigger $\mu$ requirement, events are selected that have at least one reco muon passing the following cuts:
@@ -348,7 +350,7 @@ Table~\ref{tab:cut-flow-MC} shows the number of events surviving each successive
 %\begin{table*}[htbh]
 \begin{sidewaystable}
 \begin{center}
-\topcaption{Number of events in MC signal and background datasets remaining after each cut in the selection sequence.  The signal samples have a pseudoscalar mass of 9 GeV.  The number of events is scaled to 19.7 \fbinv using the cross sections given in Tables~\ref{tab:MCBkg} and~\ref{tab:MC-sig}.  For the rows labeled ``$d_{\text{Z}}$ to PV'' and ``$m_{\mu+\text{had}} >$ 4 GeV'', pileup reweighting has been applied, while for the other rows, no pileup reweighting has been applied.\label{tab:cut-flow-MC}}
+\caption{Number of events in MC signal and background datasets remaining after each cut in the selection sequence.  The signal samples have a pseudoscalar mass of 9 GeV.  The number of events is scaled to 19.7 \fbinv using the cross sections given in Tables~\ref{tab:MCBkg} and~\ref{tab:MC-sig}.  For the rows labeled ``$d_{\text{Z}}$ to PV'' and ``$m_{\mu+\text{had}} >$ 4 GeV'', pileup reweighting has been applied, while for the other rows, no pileup reweighting has been applied.\label{tab:cut-flow-MC}}
 \resizebox{\columnwidth}{!}{
 \begin{tabular}{|m{2.5cm}|c|c|c|c|c|c|c|c|c|c|c|}
   \hline
@@ -400,7 +402,7 @@ Table~\ref{tab:cut-flow-MC} shows the number of events surviving each successive
 
 \begin{sidewaystable}
 \begin{center}
-\topcaption{Selection efficiencies for MC WH signal samples, expressed as the fraction of triggered events surviving each selection cut.\label{tab:cut-flow-WHSignal}}
+\caption{Selection efficiencies for MC WH signal samples, expressed as the fraction of triggered events surviving each selection cut.\label{tab:cut-flow-WHSignal}}
 \resizebox{\columnwidth}{!}{
 \begin{tabular}{|m{2.5cm}|c|c|c|c|c|c|c|}
   \hline
@@ -440,7 +442,7 @@ Table~\ref{tab:cut-flow-MC} shows the number of events surviving each successive
 
 \begin{sidewaystable}
 \begin{center}
-\topcaption{Selection efficiencies for MC ggH signal samples, expressed as the fraction of triggered events surviving each selection cut.\label{tab:cut-flow-ggHSignal}}
+\caption{Selection efficiencies for MC ggH signal samples, expressed as the fraction of triggered events surviving each selection cut.\label{tab:cut-flow-ggHSignal}}
 \resizebox{\columnwidth}{!}{
 \begin{tabular}{|m{2.5cm}|c|c|c|c|c|c|c|}
   \hline
