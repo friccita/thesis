@@ -15,15 +15,72 @@ The following is a list of the sources of systematic uncertainty used in the cal
 \item \textbf{Tau charge misidentification rate: } The accepted value of -1\%/+2\% from the CMS TAU POG is used~\cite{CMS:tauuncertaintytwiki}.
 \item \textbf{b-veto efficiency: } Two systematic uncertainties are considered for the b-veto efficiency. The first uncertainty stems from the fact that b-veto data/MC scale factors for light jets are applied to the tau jets on which the b-veto is applied; since the actual data/MC scale factors are expected to be somewhere between light jets and b-jets, the percent difference in signal yields when using light jet scale factors and when using b-jet scale factors is taken as a systematic uncertainty, and the magnitude ranges between 1.8-8.5\% depending on the $M_{T}$ bin and signal process. The second source of systematic uncertainty comes from the uncertainty on the light-jet scale factors used; following the BTV recommendations, the scale factors are shifted coherently by $\pm$1$\sigma$, and the difference between the nominal and shifted expected signal yields is taken as the systematic uncertainty; errors range up to 5.2\% depending on signal sample. Because the VBF signal is expected to have a similar selection efficiency as the ggH channel, the errors calculated for each mass point in the ggH channel are applied to the VBF prediction for each analogous mass point; for similar reasons, the errors calculated for the WH channel are applied to the ZH channel.
 \item \textbf{ID efficiencies for nearby lepton filter around trigger muon: } Systematics are assigned to the ID efficiency data/MC scale factors of the PF electrons, muons, and taus used for the neighbouring lepton veto around the trigger muon. For the PF electrons, since no ID is applied beyond the requirement that they pass PF reconstruction, have $p_T >$ 7 GeV, and $\abs{\eta} <$ 2.5, we apply a conservative error of 1.1\%, based on the highest uncertainty for the low-$p_T$ electrons passing Loose ID requirements~\cite{CMS:egammauncertaintytwiki}. For the PF muons, since the same soft ID is used as for the reconstructed $\tau_{\mu}$, the same systematics uncertainty of 1.5\% is applied~\cite{CMS:muonuncertaintytwiki}. For the PF taus, a conservative uncertainty of 10\% is used. This came from the suggestion of the CMS TAU POG for the ID efficiency of HPS taus reconstructed from jets via the jet-cleaning method (cf. Section~\ref{sec:evtsel-tauID}) with $p_T >$ 10 GeV; this value was estimated by taking the accepted uncertainty of 6\% from the TAU POG~\cite{CMS:tauuncertaintytwiki}, adding in quadrature the discrepancy of at least 1\% observed between the HPS tau ID efficiencies for our signal and Drell-Yan MC events in the studies described in Chapter~\ref{sec:lepideff}, and rounding upwards.
-\item \textbf{Background: } To obtain the final jet-faking-tau background prediction in the $m_{\mu+\text{X}}$ $>$ 4 GeV bin in Region A, we take the unweighted average of the nominal background prediction from Region B and the predictions from the alternative non-QCD (from MC) or all-QCD (from region D data) background shapes. For the systematic uncertainty on this background prediction, we look at the central value $+$($-$)1$\sigma$ of the alternative background shapes and compare it to the final background prediction; the greatest positive (negative) difference between the final background prediction and one of these values is then taken to be the positive (negative) systematic error on the final background prediction. This results in asymmetric systematic errors of +77.6\%/-85.0\% for the low-$M_{T}$ bin and +60.9\%/-59.2\% for the high-$M_{T}$ bin.
+\item \textbf{Background: } To obtain the final jet-faking-tau background prediction in the $m_{\mu+\text{had}}$ $>$ 4 GeV bin in Region A, we take the unweighted average of the nominal background prediction from Region B and the predictions from the alternative non-QCD (from MC) or all-QCD (from region D data) background shapes. For the systematic uncertainty on this background prediction, we look at the central value $+$($-$)1$\sigma$ of the alternative background shapes and compare it to the final background prediction; the greatest positive (negative) difference between the final background prediction and one of these values is then taken to be the positive (negative) systematic error on the final background prediction. This results in asymmetric systematic errors of +77.6\%/-85.0\% for the low-$M_{T}$ bin and +60.9\%/-59.2\% for the high-$M_{T}$ bin.
 \item \textbf{$M_{\text{T}}$: } Following the JME recommendations, errors range up to 12.2\% depending on signal sample. Just as for the b-veto errors, the MET errors calculated for each mass point in the ggH channel are applied to the VBF prediction for each analogous mass point, while the errors calculated for the WH channel are applied to the ZH channel.
 \item \textbf{VBF and ZH predictions: } The expected signal yields from the VBF and ZH channels were calculated by scaling the ggH and WH expected yields (from MC) respectively to the appropriate SM cross-sections. To account for the extra element of uncertainty introduced by this indirect method of estimation, the percent difference between the number of VBF (or ZH) events from MC and from the indirect estimation method after the full selection at the 9 GeV pseudoscalar mass point (the only mass point for which MC samples were generated for the VBF and ZH channels) was taken as an estimate of the error on the VBF and ZH predictions for all pseudoscalar mass points. For the low-$M_{T}$ bin, the errors were 23.2\% for VBF and 19.1\% for ZH; for the high-$M_{T}$ bin, the errors were 25.3\% for VBF and 24.3\% for ZH.
 \end{itemize}
 
 \section{Observed and expected results\label{sec:results-obsexp}}
 
+Table~\ref{tab:results} shows the expected numbers of signal events from each generated pseudoscalar mass point in each of the $M_{\text{T}}$ bins, followed by the background prediction (obtained from Region B) and the actual number of events observed in Region A for $m_{\mu+\text{had}}$ $>$ 4 GeV.
+
+\begin{table*}[htbh]
+\begin{center}
+\caption{Observed data, estimated background, and expected signal from each generated pseudoscalar mass point in each of the $M_{\text{T}}$ bins assuming SM cross sections and 100\% Br($H\rightarrow$$aa$$\rightarrow4\tau$)  Only statistical error is shown for the signal, while the full error is shown for the background.\label{tab:results}}
+\begin{tabular}{|c|c|c|c|}
+\hline
+\multicolumn{2}{|c|}{} & $M_{\text{T}} \le$ 50 GeV & $M_{\text{T}} >$ 50 GeV \\
+\hline
+\multirow{5}{*}{WH} & $m_{a}$ = 5 GeV & 0.11 $\pm$ 0.05 & 0.10 $\pm$ 0.04 \\
+& $m_{a}$ = 7 GeV & 1.5 $\pm$ 0.2 & 3.8 $\pm$ 0.3 \\
+& $m_{a}$ = 9 GeV & 2.7 $\pm$ 0.2 & 7.0 $\pm$ 0.3 \\
+& $m_{a}$ = 11 GeV & 4.2 $\pm$ 0.3 & 8.8 $\pm$ 0.4 \\
+& $m_{a}$ = 13 GeV & 3.5 $\pm$ 0.2 & 9.9 $\pm$ 0.4 \\
+& $m_{a}$ = 15 GeV & 3.6 $\pm$ 0.2 & 8.4 $\pm$ 0.4 \\
+\hline
+\multirow{5}{*}{ggH} & $m_{a}$ = 5 GeV & 0.31 $\pm$ 0.22 & 0 \\
+& $m_{a}$ = 7 GeV & 21 $\pm$ 2 & 1.9 $\pm$ 0.6 \\
+& $m_{a}$ = 9 GeV & 46 $\pm$ 3 & 7.6 $\pm$ 1.1 \\
+& $m_{a}$ = 11 GeV & 64 $\pm$ 3 & 11 $\pm$ 1 \\
+& $m_{a}$ = 13 GeV & 63 $\pm$ 3 & 18 $\pm$ 2 \\
+& $m_{a}$ = 15 GeV & 41 $\pm$ 3 & 11 $\pm$ 1 \\
+\hline
+\multirow{5}{*}{ZH} & $m_{a}$ = 5 GeV & 0.03 $\pm$ 0.01 & 0.03 $\pm$ 0.01 \\
+& $m_{a}$ = 7 GeV & 0.38 $\pm$ 0.04 & 1.0 $\pm$ 0.1 \\
+& $m_{a}$ = 9 GeV & 0.68 $\pm$ 0.05 & 1.9 $\pm$ 0.1 \\
+& $m_{a}$ = 11 GeV & 1.1 $\pm$ 0.05 & 2.3 $\pm$ 0.1 \\
+& $m_{a}$ = 13 GeV & 0.88 $\pm$ 0.06 & 2.7 $\pm$ 0.1 \\
+& $m_{a}$ = 15 GeV & 0.91 $\pm$ 0.06 & 2.3 $\pm$ 0.1 \\
+\hline
+\multirow{5}{*}{VBF} & $m_{a}$ = 5 GeV & 0.03 $\pm$ 0.02 & 0 \\
+& $m_{a}$ = 7 GeV & 2.3 $\pm$ 0.2 & 0.22 $\pm$ 0.06 \\
+& $m_{a}$ = 9 GeV & 5.1 $\pm$ 0.3 & 0.9 $\pm$ 0.1 \\
+& $m_{a}$ = 11 GeV & 7.0 $\pm$ 0.4 & 1.2 $\pm$ 0.1 \\
+& $m_{a}$ = 13 GeV & 6.9 $\pm$ 0.4 & 2.0 $\pm$ 0.2 \\
+& $m_{a}$ = 15 GeV & 4.5 $\pm$ 0.3 & 1.3 $\pm$ 0.2 \\
+\hline
+\multicolumn{2}{|c|}{SM Background} & \begin{tabular}[c]{@{}l@{}}5.41 $\pm$ 1 \stat \\$^{+4.2}_{-4.6}$ \syst\end{tabular} & \begin{tabular}[c]{@{}l@{}}6.08 $\pm$ 1.6 \stat \\$^{+3.7}_{-3.6}$ \syst\end{tabular} \\
+\multicolumn{2}{|c|}{Data (observed)} & 7 & 14 \\
+\hline
+\end{tabular}
+\end{center}
+\end{table*}
+
 \section{Interpretation\label{sec:results-interpretation}}
 
 \subsection{Limit calculation\label{sec:results-limitcalc}}
+
+At the end of the selection sequence, when the final $m_{\mu+\text{had}}$ background prediction (obtained as described in Sec.~\ref{sec:bkgs-jet-fake-unc}) has been normalized according to Sec.~\ref{sec:evtsel-search}, the number of events passing $m_{\mu+\text{had}} >$ 4 GeV are counted. This integral serves as the predicted number of events from background only. The integral of the region A data $m_{\mu+\text{had}}$ distribution above 4 GeV is then compared to the prediction derived from region B. In the context of this analysis, a significant excess in the region A data would be interpreted as coming from the 2HDM signal.  Assuming no excess, limits are set on the cross section times branching ratio for SM Higgs production and decay to lighter Higgses, which subsequently decay to taus.
+
+Methods from the \texttt{HiggsAnalysis/CombinedLimit} package (full code found at~\cite{CombinedGitHub}, documented in~\cite{CombinedTwiki}) are used to evaluate expected and observed limits in this analysis. The signal strengths calculated by  are defined as:
+
+\begin{equation}
+r_{\text{prod}} = \frac{\sigma_{\text{prod}}\cdot B(H\rightarrow aa \rightarrow4\tau)}{(\sigma_{\text{prod}})_{\text{expected}}} \\
+\label{eq:rDefinition}
+\end{equation}
+
+where $\sigma_{\text{prod}}$ is the production cross-section for the channel of interest and the denominators are calculated using the SM Higgs production cross sections given in~\cite{LHCHXSWG} (e.g., $\sigma$(ggH) = 19.27 fb$^{-1}$ and $\sigma$(WH) = 0.7046 fb$^{-1}$ for $m_{H}$ = 125.0 GeV). For the cases of WH and ZH, the production cross-sections are considered to be multiplied by the appropriate SM branching ratio for the decay of the vector boson to leptons.
+
+A 1-dimensional limit calculation with the $\text{CL}_{\text{S}}$ method~\cite{Read} was used to obtain observed and expected upper limits for each $M_{T}$ bin and pseudoscalar mass. For each $M_{T}$ bin, limits were calculated for the signal strength parameter corresponding to the combination of all four signal channels (ggH, WH, VBF, and ZH).
 
 \subsection{Model-independent limits\label{sec:results-limits}}
