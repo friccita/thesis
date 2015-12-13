@@ -27,6 +27,7 @@ Table~\ref{tab:results} shows the expected numbers of signal events from each ge
 \begin{table*}[htbh]
 \begin{center}
 \caption{Observed data, estimated background, and expected signal from each generated pseudoscalar mass point in each of the $M_{\text{T}}$ bins assuming SM cross sections and 100\% Br($H\rightarrow$$aa$$\rightarrow4\tau$)  Only statistical error is shown for the signal, while the full error is shown for the background.\label{tab:results}}
+\singlespacing
 \begin{tabular}{|c|c|c|c|}
 \hline
 \multicolumn{2}{|c|}{} & $M_{\text{T}} \le$ 50 GeV & $M_{\text{T}} >$ 50 GeV \\
@@ -68,7 +69,7 @@ Table~\ref{tab:results} shows the expected numbers of signal events from each ge
 
 \section{Interpretation\label{sec:results-interpretation}}
 
-\subsection{Limit calculation\label{sec:results-limitcalc}}
+\subsection{CLs limit calculation\label{sec:results-limitcalc}}
 
 At the end of the selection sequence, when the final $m_{\mu+\text{had}}$ background prediction (obtained as described in Sec.~\ref{sec:bkgs-jet-fake-unc}) has been normalized according to Sec.~\ref{sec:evtsel-search}, the number of events passing $m_{\mu+\text{had}} >$ 4 GeV are counted. This integral serves as the predicted number of events from background only. The integral of the region A data $m_{\mu+\text{had}}$ distribution above 4 GeV is then compared to the prediction derived from region B. In the context of this analysis, a significant excess in the region A data would be interpreted as coming from the 2HDM signal.  Assuming no excess, limits are set on the cross section times branching ratio for SM Higgs production and decay to lighter Higgses, which subsequently decay to taus.
 
@@ -84,3 +85,101 @@ where $\sigma_{\text{prod}}$ is the production cross-section for the channel of 
 A 1-dimensional limit calculation with the $\text{CL}_{\text{S}}$ method~\cite{Read} was used to obtain observed and expected upper limits for each $M_{T}$ bin and pseudoscalar mass. For each $M_{T}$ bin, limits were calculated for the signal strength parameter corresponding to the combination of all four signal channels (ggH, WH, VBF, and ZH).
 
 \subsection{Model-independent limits\label{sec:results-limits}}
+
+Model-independent expected and observed limits were calculated using the total expected yield from all four signal channels, with the \texttt{Asymptotic} routine in \texttt{combine}~\cite{springerlink:10.1140/epjc/s10052-011-1554-0} using a pre-fit Asimov dataset to calculate the $\text{CL}_{\text{S}}$ expected limit on the signal strength. Plots of the observed and expected $\text{CL}_{\text{S}}$ limits (median, $\pm1\sigma$, and $\pm2\sigma$) for the low-$M_{T}$ bin, high-$M_{T}$ bin, and combination of the two bins at different $m_{\cmsSymbolFace{a}}$ points are shown in Figure~\ref{fig:lowhighMTCLs}. The limits are reported in terms of the total branching ratio Br($H\rightarrow$$aa\rightarrow4\tau$), assuming SM Higgs production cross-sections.
+
+\begin{figure}[hbtp]
+  \begin{center}
+    \includegraphics[width=\cmsFigWidth]{figures/expLimits_Br_lowMT_20GeV_ggHVBF}
+    \includegraphics[width=\cmsFigWidth]{figures/expLimits_Br_highMT_20GeV_ggHWH}
+    \includegraphics[width=\cmsFigWidth]{figures/expLimits_Br_20GeV_4sig}
+    \caption{Observed 95\% C.L. limits (solid black curve) on the branching ratio Br($H\rightarrow$$aa\rightarrow4\tau$), compared to expected limits (dotted black curve, with $\pm1\sigma$ bands in green and $\pm2\sigma$ bands in yellow) at pseudoscalar mass points $m_{\cmsSymbolFace{a}}$ = 5 through 15 GeVcc.  (Top \cmsLeft) $M_{\text{T}}$ \textless\xspace 50 GeV. (Top \cmsRight) $M_{\text{T}}$ \textgreater\xspace 50 GeV.  (Bottom) Combined result between the low- and high-$M_{\text{T}}$ bins.}
+    \label{fig:lowhighMTCLs}
+  \end{center}
+\end{figure}
+
+The model-independent observed and expected $\text{CL}_{\text{S}}$ limits, expressed in terms of limits on Br($H\rightarrow$$aa\rightarrow4\tau$) assuming SM Higgs production cross-sections are tabulated in Tables~\ref{tab:CLs-limits-lowMT}-\ref{tab:CLs-limits}.
+
+\begin{table*}
+\begin{center}
+  \caption{Observed and expected $\text{CL}_{\text{S}}$ limits on Br($H\rightarrow$$aa\rightarrow4\tau$) assuming SM Higgs production cross-sections in the low-$M_{\text{T}}$ bin.}
+%\resizebox{\columnwidth}{!}{%
+\singlespacing
+\begin{tabular}{|m{3cm}|c|c|c|c|c|c|c|}
+  \hline
+  $m_{\cmsSymbolFace{a}}$ (GeV) & -2$\sigma$ & -1$\sigma$ & Median expected & +1$\sigma$ & +2$\sigma$ & Observed \\
+  \hline
+  \hline
+  5 & 13.6 & 17.0 & 22.3 & 30.4 & 41.7 & 24.3 \\
+  \hline
+  7 & 0.255 & 0.318 & 0.420 & 0.576 & 0.787 & 0.457 \\
+  \hline
+  9 & 0.119 & 0.148 & 0.196 & 0.268 & 0.367 & 0.213 \\
+  \hline
+  11 & 0.0852 & 0.107 & 0.141 & 0.193 & 0.266 & 0.153 \\
+  \hline
+  13 & 0.0875 & 0.110 & 0.144 & 0.197 & 0.272 & 0.157 \\
+  \hline
+  15 & 0.130 & 0.163 & 0.214 & 0.294 & 0.404 & 0.234 \\
+  \hline
+  \end{tabular}%
+%}
+\label{tab:CLs-limits-lowMT}
+\end{center}
+\end{table*}
+
+\begin{table*}
+\begin{center}
+  \caption{Observed and expected $\text{CL}_{\text{S}}$ limits on Br($H\rightarrow$$aa\rightarrow4\tau$) assuming SM Higgs production cross-sections in the high-$M_{\text{T}}$ bin.}
+%\resizebox{\columnwidth}{!}{%
+\singlespacing
+\begin{tabular}{|m{3cm}|c|c|c|c|c|c|c|}
+  \hline
+  $m_{\cmsSymbolFace{a}}$ (GeV) & -2$\sigma$ & -1$\sigma$ & Median expected & +1$\sigma$ & +2$\sigma$ & Observed \\
+  \hline
+  \hline
+  5 & 49.2 & 64.7 & 89.6 & 132 & 186 & 145 \\
+  \hline
+  7 & 0.883 & 1.15 & 1.59 & 2.33 & 3.23 & 2.56 \\
+  \hline
+  9 & 0.355 & 0.465 & 0.643 & 0.942 & 1.31 & 1.03 \\
+  \hline
+  11 & 0.271 & 0.355 & 0.490 & 0.719 & 1.005 & 0.789 \\
+  \hline
+  13 & 0.192 & 0.251 & 0.347 & 0.508 & 0.711 & 0.559 \\
+  \hline
+  15 & 0.262 & 0.345 & 0.475 & 0.696 & 0.973 & 0.765 \\
+  \hline
+  \end{tabular}%
+%}
+\label{tab:CLs-limits-highMT}
+\end{center}
+\end{table*}
+
+\begin{table*}
+\begin{center}
+  \caption{Observed and expected $\text{CL}_{\text{S}}$ limits on Br($H\rightarrow$$aa\rightarrow4\tau$) assuming SM Higgs production cross-sections for the combination of the low- and high-$M_{\text{T}}$ bins.}
+%\resizebox{\columnwidth}{!}{%
+\singlespacing
+\begin{tabular}{|m{3cm}|c|c|c|c|c|c|c|}
+  \hline
+  $m_{\cmsSymbolFace{a}}$ (GeV) & -2$\sigma$ & -1$\sigma$ & Median expected & +1$\sigma$ & +2$\sigma$ & Observed \\
+  \hline
+  \hline
+  5 & 13.2 & 16.7 & 21.8 & 29.7 & 40.4 & 26.0 \\
+  \hline
+  7 & 0.248 & 0.312 & 0.408 & 0.560 & 0.765 & 0.491 \\
+  \hline
+  9 & 0.114 & 0.144 & 0.189 & 0.259 & 0.352 & 0.230 \\
+  \hline
+  11 & 0.0825 & 0.103 & 0.137 & 0.187 & 0.258 & 0.165 \\
+  \hline
+  13 & 0.0817 & 0.103 & 0.136 & 0.185 & 0.252 & 0.171 \\
+  \hline
+  15 & 0.120 & 0.152 & 0.200 & 0.273 & 0.371 & 0.254 \\
+  \hline
+  \end{tabular}%
+%}
+\label{tab:CLs-limits}
+\end{center}
+\end{table*}
