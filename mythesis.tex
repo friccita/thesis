@@ -9,6 +9,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %\usepackage{bookmark}
+\usepackage[toc,page]{appendix}
 \usepackage[us,nodayofweek,12hr]{datetime}
 \usepackage{graphicx}
 \usepackage{siunitx}
@@ -133,6 +134,11 @@
 \include{bkg} % bkg modelling, rationale, and validation
 \include{results} % observed data vs expectation, limits (incl. explanation of CLs)
 \include{conclusions}
+
+\begin{appendices}
+\include{appendix_nsubj}
+\end{appendices}
+
 \listoffigures\newpage
 \listoftables\newpage
 
