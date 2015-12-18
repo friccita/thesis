@@ -27,7 +27,7 @@ Finally, events are classified into one of two bins: low transverse mass $M_{\te
 
 Events are required to have at least one reco muon that satisfies the following criteria:
 \begin{itemize}
-	\item $p_T >$ 25 GeV (this is at the turn-on point for the HLT used in this analysis, as shown in \cite{CMS:muonhlttwiki})
+	\item $p_T >$ 25 GeV (this is at the turn-on point for the HLT used in this search, as shown in \cite{CMS:muonhlttwiki})
 	\item $\abs{\eta} <$ 2.1
 	\item Tight muon ID:
 	\begin{itemize}
@@ -52,7 +52,7 @@ The reco muon passing the above criteria (or, if more than one reco muon passed,
 %leptonveto subsection
 \subsection{Neighbouring lepton veto for trigger muon\label{sec:evtsel-leptonveto}}
 
-The nearby lepton isolation requirement is motivated by the desire to have a well-understood trigger and PF relative isolation efficiency for the ggH and VBF production modes to which this analysis is sensitive.  Unlike in the WH and ZH production channels, in which the particle firing the isolated muon trigger is an isolated muon from $W$ or $Z$ decay, the particle firing the isolated muon trigger in the ggH and VBF production channels is a muon coming from a tau decay.  The difference is illustrated in Figure~\ref{fig:WHZH-vs-ggHVBF-trigger}.
+The nearby lepton isolation requirement is motivated by the desire to have a well-understood trigger and PF relative isolation efficiency for the ggH and VBF production modes to which this search is sensitive.  Unlike in the WH and ZH production channels, in which the particle firing the isolated muon trigger is an isolated muon from $W$ or $Z$ decay, the particle firing the isolated muon trigger in the ggH and VBF production channels is a muon coming from a tau decay.  The difference is illustrated in Figure~\ref{fig:WHZH-vs-ggHVBF-trigger}.
 
 \begin{figure}[hbtp]
   \begin{center}
@@ -60,7 +60,7 @@ The nearby lepton isolation requirement is motivated by the desire to have a wel
     \includegraphics[width=\cmsFigWidth]{figures/ZH_trigger}
     \includegraphics[width=\cmsFigWidth]{figures/ggH_trigger}
     \includegraphics[width=\cmsFigWidth]{figures/VBF_trigger}
-    \caption{Diagrams of the four Higgs production modes considered in this analysis, with the triggering particle circled in red.  (Top \cmsLeft) WH.  (Top \cmsRight) ZH.  (Bottom \cmsLeft) ggH.  (Bottom \cmsRight) VBF.}
+    \caption{Diagrams of the four Higgs production modes considered in this search, with the triggering particle circled in red.  (Top \cmsLeft) WH.  (Top \cmsRight) ZH.  (Bottom \cmsLeft) ggH.  (Bottom \cmsRight) VBF.}
     \label{fig:WHZH-vs-ggHVBF-trigger}
   \end{center}
 \end{figure}
@@ -112,7 +112,7 @@ Figure~\ref{fig:HLTEffVsDR} shows $\epsilon_{\text{HLT}}^{\text{no }l\text{ iso}
   \end{center}
 \end{figure}
 
-In contrast, Figure~\ref{fig:HLTEffVsDR_withFilters} shows $\epsilon_{\text{HLT}}$ as a function of $\Delta$R(gen $a\rightarrow\tau\rightarrow\mu$ muon, gen $\tau_{\text{2}}$), where the gen $a\rightarrow\tau\rightarrow\mu$ muon is matched to the reco'd muon as described in Eq.~\ref{eq:muonHLTeff} above and the gen $\tau_{\text{2}}$ is the other tau from the $a\rightarrow\tau\rightarrow\mu$ decay.  The efficiency is calculated separately for each decay mode of the gen $\tau_{\text{2}}$ (electronic, muonic, or hadronic).  The efficiencies are much flatter in $\Delta$R when the nearby lepton isolation requirement is applied to the reconstructed trigger muon, because it insures that only events in which the two reconstructed taus from pseudoscalar decay are well separated may pass the analysis selection.  The trigger efficiency for $a\rightarrow\tau\rightarrow\mu$ muons in these events is similar to that of $W$ decay muons and is in the regime where the trigger muon is isolated and MC describes the data well.
+In contrast, Figure~\ref{fig:HLTEffVsDR_withFilters} shows $\epsilon_{\text{HLT}}$ as a function of $\Delta$R(gen $a\rightarrow\tau\rightarrow\mu$ muon, gen $\tau_{\text{2}}$), where the gen $a\rightarrow\tau\rightarrow\mu$ muon is matched to the reco'd muon as described in Eq.~\ref{eq:muonHLTeff} above and the gen $\tau_{\text{2}}$ is the other tau from the $a\rightarrow\tau\rightarrow\mu$ decay.  The efficiency is calculated separately for each decay mode of the gen $\tau_{\text{2}}$ (electronic, muonic, or hadronic).  The efficiencies are much flatter in $\Delta$R when the nearby lepton isolation requirement is applied to the reconstructed trigger muon, because it ensures that events can pass the selection sequence only if the two reconstructed taus from the pseudoscalar decay are well separated.  The trigger efficiency for $a\rightarrow\tau\rightarrow\mu$ muons in these events is similar to that of $W$ decay muons and is in the regime where the trigger muon is isolated and MC describes the data well.
 
 \begin{figure}[hbtp]
   \begin{center}
@@ -173,7 +173,7 @@ Figure~\ref{fig:IsoEffVsDR} shows $\epsilon_{\text{rel. iso.}}^{\text{no }l\text
   \end{center}
 \end{figure}
 
-In contrast, Figure~\ref{fig:IsoEffVsDR_withFilters} shows $\epsilon_{\text{rel. iso.}}$ as a function of $\Delta$R(gen $a\rightarrow\tau\rightarrow\mu$ muon, gen $\tau_{\text{2}}$), where the gen $a\rightarrow\tau\rightarrow\mu$ muon is matched to the reco'd muon as described in Eq.~\ref{eq:muonPFRelIsoeff} above and the gen $\tau_{\text{2}}$ is the other tau from the $\cmsSymbolFace{a}\rightarrow\tau\tau$ decay.  The efficiency is calculated separately for each decay mode of the gen $\tau_{\text{2}}$ (electronic, muonic, or hadronic).  The efficiencies are much flatter in $\Delta$R\ when the nearby lepton isolation requirement is applied to the reconstructed trigger muon, because it insures that only events in which the two reconstructed taus from pseudoscalar decay are well separated may pass the analysis selection.  The PF relative isolation efficiency for $a\rightarrow\tau\rightarrow\mu$ muons in these events is now similar to that of $Z$ decay muons and is in the regime where the trigger muon is isolated and MC describes the data well.
+In contrast, Figure~\ref{fig:IsoEffVsDR_withFilters} shows $\epsilon_{\text{rel. iso.}}$ as a function of $\Delta$R(gen $a\rightarrow\tau\rightarrow\mu$ muon, gen $\tau_{\text{2}}$), where the gen $a\rightarrow\tau\rightarrow\mu$ muon is matched to the reco'd muon as described in Eq.~\ref{eq:muonPFRelIsoeff} above and the gen $\tau_{\text{2}}$ is the other tau from the $\cmsSymbolFace{a}\rightarrow\tau\tau$ decay.  The efficiency is calculated separately for each decay mode of the gen $\tau_{\text{2}}$ (electronic, muonic, or hadronic).  The efficiencies are much flatter in $\Delta$R\ when the nearby lepton isolation requirement is applied to the reconstructed trigger muon, because it ensures that events can pass the selection sequence only if the two reconstructed taus from the pseudoscalar decay are well separated.  The PF relative isolation efficiency for $a\rightarrow\tau\rightarrow\mu$ muons in these events is now similar to that of $Z$ decay muons and is in the regime where the trigger muon is isolated and MC describes the data well.
 
 \begin{figure}[hbtp]
   \begin{center}
@@ -190,14 +190,14 @@ After all other selection cuts, the acceptance of the nearby lepton isolation re
 %boosted tau ID
 \section{Boosted tau ID\label{sec:evtsel-ditau}}
 
-The signature being sought in this analysis is one in which one of the $a$ decays results in a $\tau_{\mu}\tau_{\text{had}}$ final state, while no constraints are placed on the decay of the taus coming from the other $\cmsSymbolFace{a}$. The hadronic tau identification algorithm employed in this analysis is the HPS algorithm.
+The target signature in this search is one in which one of the $a$ decays results in a $\tau_{\mu}\tau_{\text{had}}$ final state, while no constraints are placed on the decay of the taus coming from the other $\cmsSymbolFace{a}$. The hadronic tau identification algorithm employed in this search is the HPS algorithm.
 
 As described in Section~\ref{sec:semileptonic}, the tau pairs produced in the pseudoscalar decays will be highly collimated, and their decay products will invade one another's isolation cones. In particular, for the $\tau_{\mu}\tau_{\text{had}}$ pair, the muon from $\tau_{\mu}$ has been found to end up frequently among the constituents of the jet seeded by the $\tau_{\text{had}}$ decay and therefore among the isolation constituents of the $\tau_{\text{had}}$ reconstructed with HPS.  Figure~\ref{fig:evt-sel-HPS-iso-eff-standard-vs-boosted-ID} shows the $\tau_{\text{had}}$ isolation efficiency for the standard HPS ID versus the boosted $\tau_{\mu}\tau_{\text{had}}$ ID described below.  The isolation efficiency is about four times higher for the boosted $\tau_{\mu}\tau_{\text{had}}$ ID.
 
 \begin{figure}[hbtp]
   \begin{center}
     \includegraphics[width=\cmsFigWidth]{figures/effVsPT_MCTruthMuonRemoval_LooseCombinedIsolationDBSumPtCorr_canvas}
-    \caption{Hadronic tau isolation efficiency for the WH signal using the standard tau identification algorithm (black) and the boosted ID developed for this analysis (red).}
+    \caption{Hadronic tau isolation efficiency for the WH signal using the standard tau identification algorithm (black) and the boosted ID developed for this search (red).}
     \label{fig:evt-sel-HPS-iso-eff-standard-vs-boosted-ID}
   \end{center}
 \end{figure}
@@ -227,13 +227,13 @@ After all soft muons passing these requirements are collected, they are used as 
 %Jet cleaning and boosted tau ID
 \subsection{Jet cleaning and hadronic tau ID\label{sec:evtsel-tauID}}
 
-In this analysis, tau decays are reconstructed from the anti-$k_{\text{T}}$ R = 0.5~\cite{1126-6708-2008-04-063} PF jets (``ak5PFJets'') using the HPS algorithm. Before running HPS, jet constituents passing the soft muon ID (Sec.~\ref{sec:evtsel-softmu}) are removed. In the majority of cases, only one soft muon is removed from a jet, but if more than one muon is removed, the highest $p_T$ removed muon is identified as the $\tau_{\mu}$. A new ak5PFJet (henceforth referred to as the cleaned jet after the removal of the muon) is then reconstructed from the remaining PF constituents. These cleaned jets are submitted to the HPS algorithm and reconstructed as $\tau_{\text{had}}$ candidates.
+In this search, tau decays are reconstructed from the anti-$k_{\text{T}}$ R = 0.5~\cite{1126-6708-2008-04-063} PF jets (``ak5PFJets'') using the HPS algorithm. Before running HPS, jet constituents passing the soft muon ID (Sec.~\ref{sec:evtsel-softmu}) are removed. In the majority of cases, only one soft muon is removed from a jet, but if more than one muon is removed, the highest $p_T$ removed muon is identified as the $\tau_{\mu}$. A new ak5PFJet (henceforth referred to as the cleaned jet after the removal of the muon) is then reconstructed from the remaining PF constituents. These cleaned jets are submitted to the HPS algorithm and reconstructed as $\tau_{\text{had}}$ candidates.
 
 The event is then selected to have at least one $\tau_{\text{had}}$ candidate reconstructed as above with $p_T >$ 20 GeV, $\abs{\eta} <$ 2.3, and passing the HPS \texttt{DecayModeFinding} and \texttt{\\MediumCombinedIsolationDBSumPtCorr} discriminators. HPS is currently capable of reconstructing the following hadronic tau decay modes: single hadron (one prong decay, or one prong plus one low-energy $\pi^0$), single hadron plus one ECAL strip (one prong plus one $\pi^0$), single hadron plus two strips (one prong plus one $\pi^0$ in which the photons from the $\pi^0$ decay are well separated in the ECAL), and three hadrons (three prong decay). In addition, because no anti-muon or anti-electron discriminators are applied to the HPS object, some leptonic tau decays get counted as single hadron decays.  The DecayModeFinding discriminator requires that the reconstructed HPS $\tau_{\text{had}}$ object have one of these four decay modes. Further selection on the isolation of the $\tau_{\text{had}}$ candidate helps to discriminate against fake taus reconstructed from quark or gluon jets, which tend to involve more hadronic activity and soft radiation and thus are less isolated.  The HPS isolation energy, described in \cite{CMS_AN_2010-082}, is defined by the $\Delta\beta$ pileup-corrected $E_T$ sum of the PF charged and neutral hadron and PF gamma candidates found within a $\Delta$R = 0.5 cone around the $\tau_{\text{had}}$ axis.  The \texttt{MediumCombinedIsolationDBSumPtCorr} discriminator~\cite{CMS:tauidtwiki} imposes an upper limit of 1.0 GeV on the HPS isolation energy.
 
 In the majority of events passing all these selection cuts, there is only one $\tau_{\text{had}}$ passing both HPS discriminators after the $\tau_{\mu}$ is removed from the jet used to reconstruct it. If more than one $\tau_{\text{had}}$ object passes, then the one with the highest $p_T$ is taken to be the $\tau_{\text{had}}$. If more than one $\tau_{\mu}\tau_{\text{had}}$ object is found in the event, the one with the highest $\tau_{\mu}\tau_{\text{had}}$ invariant mass is chosen.
 
-Only one $\tau_{\mu}\tau_{\text{had}}$ object is selected in this analysis. Requiring two such objects was tested, to see whether this could increase sensitivity to the WH signal, but this was observed to kill all MC background events, while only a handful of signal events and QCD control sample events survived.  It would have been impossible to model the background meaningfully.
+Only one $\tau_{\mu}\tau_{\text{had}}$ object is selected in this search. Requiring two such objects was tested, to see whether this could increase sensitivity to the WH signal, but this was observed to kill all MC background events, while only a handful of signal events and QCD control sample events survived.  It would have been impossible to model the background meaningfully.
 
 %charge requirements
 \section{Opposite charge muon veto\label{sec:evtsel-OSSF}}
@@ -276,7 +276,7 @@ $\tau_{\mu}\tau_{\text{had}}$ pairs are reconstructed in background events when 
 
 Heavy flavour jets, such as those from B meson or top decays, often contain a muon among the decay products which gets reconstructed as the $\tau_{\mu}$. Thus, the identification of b-jets can serve as a means to reject background from heavy flavour jets.
 
-To optimize the identification of b-jets, b-tagging algorithms take advantage of the unique properties that distinguish b-jets from other kinds of jets produced at the LHC. One important property is the long lifetime of B mesons; when they decay, they will have travelled a significant distance (on the order of millimeters) from the primary vertex, resulting in displaced secondary vertices.  Thus, the impact parameter and secondary vertex associated with such jets can be used as discriminating variables. The combined secondary vertex (CSV) algorithm~\cite{Weiser:927399}, which is used in this analysis, employs a likelihood ratio that takes as input information about the primary vertex, secondary vertex, 2D and 3D impact parameters, track multiplicity, and track pseudorapidities of jets.
+To optimize the identification of b-jets, b-tagging algorithms take advantage of the unique properties that distinguish b-jets from other kinds of jets produced at the LHC. One important property is the long lifetime of B mesons; when they decay, they will have travelled a significant distance (on the order of millimeters) from the primary vertex, resulting in displaced secondary vertices.  Thus, the impact parameter and secondary vertex associated with such jets can be used as discriminating variables. The combined secondary vertex (CSV) algorithm~\cite{Weiser:927399}, which is used in this search, employs a likelihood ratio that takes as input information about the primary vertex, secondary vertex, 2D and 3D impact parameters, track multiplicity, and track pseudorapidities of jets.
 
 Figure~\ref{fig:sigVsBkg_csv_regA} shows the distribution of the CSV discriminator for Monte Carlo signals and all backgrounds except QCD in the low-$M_{\text{T}}$ and high-$M_{\text{T}}$ bins. As can be seen from this figure, the $\tau_{\text{had}}$ jet in the signal final states generally does not have large values of CSV; by vetoing b-tagged jets, the single top and $t\bar{t}$ backgrounds can be cut down significantly. A b-tag veto was thus implemented by rejecting events in which the cleaned jet associated with the $\tau_{\text{had}}$ object had a CSV value greater than the medium CSV working point of 0.679 recommended by the BTV POG for \texttt{22Jan2013} re-reco data at 8 \TeV~\cite{CMS:btvpogtwiki}.
 
@@ -329,7 +329,7 @@ To reduce the background from $\tau_{\mu}\tau_{\text{had}}$ pairs in which the $
 %MT
 \section{Transverse mass regions \label{sec:evtsel-mt}}
 
-Figure~\ref{fig:sigVsBkg_MET_MT_regA} shows the $M_{\text{T}}$ distribution for four signal models and all backgrounds.  The gluon fusion signal is clustered at low $M_{\text{T}}$, where Drell-Yan and QCD are the most important backgrounds.  The WH signal can be found in the high $M_{\text{T}}$ bin, where $W$+jets and $t\bar{t}$ dominate the background.  We define $M_{\text{T}} \le$ 50 GeV as the low-$M_{\text{T}}$ bin of the analysis, sensitive to ggH and VBF, and $M_{\text{T}} >$ 50 GeV as the high-$M_{\text{T}}$ bin, sensitive to WH.  The cut was chosen to optimize S/$\sqrt{\text{S} + \text{B}}$ for the WH signal in the high-$M_{\text{T}}$ bin.  The $M_{\text{T}}$ in this analysis is calculated using Type I-corrected~\cite{1748-0221-6-11-P11002} PAT \ETslash, which is also used in the calculation of \ETslash systematics~\cite{METuncertainty}.
+Figure~\ref{fig:sigVsBkg_MET_MT_regA} shows the $M_{\text{T}}$ distribution for four signal models and all backgrounds.  The gluon fusion signal is clustered at low $M_{\text{T}}$, where Drell-Yan and QCD are the most important backgrounds.  The WH signal can be found in the high $M_{\text{T}}$ bin, where $W$+jets and $t\bar{t}$ dominate the background.  We define $M_{\text{T}} \le$ 50 GeV as the low-$M_{\text{T}}$ bin of this search, sensitive to ggH and VBF, and $M_{\text{T}} >$ 50 GeV as the high-$M_{\text{T}}$ bin, sensitive to WH.  The cut was chosen to optimize S/$\sqrt{\text{S} + \text{B}}$ for the WH signal in the high-$M_{\text{T}}$ bin.  The $M_{\text{T}}$ in this search is calculated using Type I-corrected~\cite{1748-0221-6-11-P11002} PAT \ETslash, which is also used in the calculation of \ETslash systematics~\cite{METuncertainty}.
 
 \begin{figure}[hbtp]
   \begin{center}
@@ -345,7 +345,7 @@ For technical reasons, the \ETslash definition for the $\pm1\sigma$ varied \ETsl
 
 %Final selection
 \section{Search region \label{sec:evtsel-search}}
-Table~\ref{tab:cut-flow-MC} shows the number of events surviving each successive cut in the selection sequence for the $m_a$ = 9 GeV WH and ggH signal samples and all background Monte Carlo samples (except for QCD Monte Carlo, due to poor statistics) used in the analysis optimization.  Table~\ref{tab:cut-flow-WHSignal} displays the selection efficiencies for the WH signal samples for each selection cut, expressed as the fraction of triggered signal events (i.e., events passing the HLT) surviving after each cut.  Table~\ref{tab:cut-flow-ggHSignal} shows the analogous selection efficiencies for the ggH signal samples.  The number of events is scaled to 19.7 fb$^{-1}$ using the cross sections given in Tables~\ref{tab:MCBkg} and~\ref{tab:MC-sig}.
+Table~\ref{tab:cut-flow-MC} shows the number of events surviving each successive cut in the selection sequence for the $m_a$ = 9 GeV WH and ggH signal samples and all background Monte Carlo samples (except for QCD Monte Carlo, due to poor statistics) used in the selection sequence optimization.  Table~\ref{tab:cut-flow-WHSignal} displays the selection efficiencies for the WH signal samples for each selection cut, expressed as the fraction of triggered signal events (i.e., events passing the HLT) surviving after each cut.  Table~\ref{tab:cut-flow-ggHSignal} shows the analogous selection efficiencies for the ggH signal samples.  The number of events is scaled to 19.7 fb$^{-1}$ using the cross sections given in Tables~\ref{tab:MCBkg} and~\ref{tab:MC-sig}.
 
 %\begin{table*}[htbh]
 \begin{sidewaystable}
@@ -480,7 +480,7 @@ Table~\ref{tab:cut-flow-MC} shows the number of events surviving each successive
 \end{center}
 \end{sidewaystable}
 
-Compared to WH, \texttt{HLT\_IsoMu24\_eta2p1} rejects a large fraction of ggH events (factor 10 \vs factor 4).  However, the ggH cross section is 80 times larger than the WH cross section, making ggH an important signal in this analysis.  Once the HLT selection has been applied, the acceptance of the trigger muon selection, $\tau_{\mu}\tau_{\text{had}}$ selection, b-veto, and event-level cuts $q(\tau_{\mu}) \times q(\text{trigger }\mu) >$ 0 and $q(\tau_{\mu}) \times q(\tau_{\text{had}}) <$ 0 is larger for the WH samples than for the ggH samples by factors 1.3-2 depending on pseudoscalar mass.  A large portion of that difference is explained by the better acceptance of the trigger muon ID for $W$ decay muons than for ggH $a\rightarrow\tau\rightarrow\mu$ muons.
+Compared to WH, \texttt{HLT\_IsoMu24\_eta2p1} rejects a large fraction of ggH events (factor 10 \vs factor 4).  However, the ggH cross section is 80 times larger than the WH cross section, making ggH an important signal in this search.  Once the HLT selection has been applied, the acceptance of the trigger muon selection, $\tau_{\mu}\tau_{\text{had}}$ selection, b-veto, and event-level cuts $q(\tau_{\mu}) \times q(\text{trigger }\mu) >$ 0 and $q(\tau_{\mu}) \times q(\tau_{\text{had}}) <$ 0 is larger for the WH samples than for the ggH samples by factors 1.3-2 depending on pseudoscalar mass.  A large portion of that difference is explained by the better acceptance of the trigger muon ID for $W$ decay muons than for ggH $a\rightarrow\tau\rightarrow\mu$ muons.
 
 In both the WH and ggH samples, the trigger muon + $\tau_{\mu}\tau_{\text{had}}$ ID selects 1.7-4.9\% of triggered events depending on pseudoscalar mass.  The main contributors to this acceptance are the $\tau_{\mu}\tau_{\text{had}}$ decay mode requirement, high tau $p_T$ threshold of 20 GeV, and HPS isolation efficiency of $\sim$60\%.  For events with an identified trigger muon, the $\tau_{\mu}\tau_{\text{had}}$ ID accepts 4-5\% of signal events but only 1 in $10^{5} W$ + jets events, 1 in $10^{4}$ Drell-Yan + jets events, and 1 in 1000 $t\bar{t}$ events.  A drastic reduction in the Drell-Yan background comes from the requirement $q(\tau_{\mu}) \times q(\text{trigger }\mu) >$ 0, and about 65\% of the $t\bar{t}$ background is removed by the b-veto.
 
