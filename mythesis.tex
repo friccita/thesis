@@ -8,7 +8,27 @@
 %                                                                      %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%\usepackage{bookmark}
+\usepackage[
+  % Some remarks:
+  % * drivers like 'pdftex' that can be detected automatically
+  %   are not necessary
+  % * breaklinks is rather an internal option.
+  %   If a driver does not support it, then forcing the option
+  %   let the text break across lines, but also the link
+  %   areas are "broken". If the driver supports the option,
+  %   then the option is enabled anyway.
+  % * Information entries should be set outside,
+  %   because LaTeX expands the package options,
+  %   hyperref does not like them, if they are
+  %   prematurely expanded.
+  % * Hyperref has a new option for hiding links: hidelinks
+  hidelinks,
+  letterpaper,
+  pagebackref,
+  bookmarksopen,
+  bookmarksnumbered,
+]{hyperref}
+\usepackage{bookmark}
 \usepackage[toc,page]{appendix}
 \usepackage[us,nodayofweek,12hr]{datetime}
 \usepackage{graphicx}
