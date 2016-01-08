@@ -43,7 +43,7 @@ Events are required to have at least one reco muon that satisfies the following 
           \begin{itemize}
           \item \textbf{Electrons:} \texttt{reco::GsfElectron} passing PF reconstruction with $p_T >$ 7 GeV and $\abs{\eta} <$ 2.5 (same as~\cite{Chatrchyan:2013mxa})
           \item \textbf{Muons:} PF muon with $p_T >$ 5 GeV and $\abs{\eta} <$ 2.4 passing the soft muon ID described in Section~\ref{sec:evtsel-softmu} and~\cite{CMS:2010uta}
-          \item \textbf{Taus:} HPS PF tau with $p_T >$ 10 GeV, $\abs{\eta} <$ 2.3, and passing \texttt{DecayModeFinding} and \texttt{MediumCombinedIsolationDBSumPtCorr} discriminators reconstructed from a PF jet that has been cleaned of the trigger muon with the same jet-cleaning algorithm described in Section~\ref{sec:evtsel-tauID} (the $p_T$ cut at 10 GeV rather than 20 GeV was chosen to make the veto more stringent)
+          \item \textbf{Taus:} HPS PF tau with $p_T >$ 10 GeV and $\abs{\eta} <$ 2.3, passing \texttt{DecayModeFinding} and \texttt{MediumCombinedIsolationDBSumPtCorr} discriminators, reconstructed from a PF jet that has been cleaned of the trigger muon with the same jet-cleaning algorithm described in Section~\ref{sec:evtsel-tauID} (the $p_T$ cut at 10 GeV rather than 20 GeV was chosen to make the veto more stringent)
           \end{itemize}
 \end{itemize}
 
@@ -52,7 +52,7 @@ The reco muon passing the above criteria (or, if more than one reco muon passed,
 %leptonveto subsection
 \subsection{Neighbouring lepton veto for trigger muon\label{sec:evtsel-leptonveto}}
 
-The nearby lepton isolation requirement is motivated by the desire to have a well-understood trigger and PF relative isolation efficiency for the ggH and VBF production modes to which this search is sensitive.  Unlike in the WH and ZH production channels, in which the particle firing the isolated muon trigger is an isolated muon from $W$ or $Z$ decay, the particle firing the isolated muon trigger in the ggH and VBF production channels is a muon coming from a tau decay.  The difference is illustrated in Figure~\ref{fig:WHZH-vs-ggHVBF-trigger}.
+The nearby lepton isolation requirement is motivated by the desire to have a well understood trigger and PF relative isolation efficiency for the ggH and VBF production modes to which this search is sensitive.  Unlike in the WH and ZH production channels, in which the particle firing the isolated muon trigger is an isolated muon from $W$ or $Z$ decay, the particle firing the isolated muon trigger in the ggH and VBF production channels is a muon coming from a tau decay.  The difference is illustrated in Figure~\ref{fig:WHZH-vs-ggHVBF-trigger}.
 
 \begin{figure}[hbtp]
   \begin{center}
