@@ -13,22 +13,77 @@ The rest of this chapter treats the projects involving the CMS pixel detector ge
 \section{Pilot system simulation\label{sec:matbudg-pilot}}
 %1. Pilot system simulation (mention of Phase I upgrade, LS1, installation of pilot system, how it was added to the description, figures)
 
-From February 2013 to February 2015, the LHC was turned off. During this period of planned off-time, repairs and maintenance were done on the CMS detector. The pixel detector was extracted from the experimental cavern in order for problematic panels and electronics to be fixed or replaced. While it was out, one extra endcap disk was installed on the -z side of the forward pixel detector (FPIX); 8 prototype modules for the planned Phase I upgrade~\cite{Dominguez:1481838} were mounted on the blades of this extra disk. Circuit boards called portcards were also installed, for reading out the prototype modules. All together, the extra disk and its associated cables and electronics make up the pilot system.
+From February 2013 to February 2015, the LHC was turned off. During this period of planned off-time, while the LHC was being prepared for proton-proton collisions at the design centre-of-mass energy $\sqrt{s} =$ 14 TeV, the CMS collaboration took the opportunity to perform repairs and maintenance on the CMS detector and install a new beampipe with a smaller diameter. To make room for the beampipe replacement, the pixel detector was extracted from the experimental cavern. While it was being stored in a lab aboveground, longstanding problems with its panels and electronics were diagnosed and fixed, and the barrel and endcap systems were calibrated in preparation for reinstallation in the cavern.
 
-The tracker geometry and material description at the time did not include a description of the pilot system. In order to have an accurate representation of the material distribution (often referred to as the material budget) in the detector for generating MC events with this new configuration of the pixel detector, the geometry description was updated accordingly. A disk on the -z endcap was cloned into the position where the new disk was installed; new objects were defined in DDL to represent the shape and material of the new modules and their support structures. The large uniform blocks roughly representing the FPIX portcard electronics in the service cylinder also were updated, since the material composition had changed due to the addition of copper-containing DC-DC converters and other new electronics for the pilot system's readout. A new composite material representing the new average material composition was defined.
+In addition to repairs and calibration, one extra endcap disk was installed on the -z side of the forward pixel detector (FPIX). 8 prototype modules for the planned Phase I upgrade~\cite{Dominguez:1481838} were mounted on the blades of this extra disk; Figure~\ref{fig:pilotmodules_actual} shows the third half-disk in one of the -z FPIX half-cylinders, with the Phase I prototype modules mounted. DC-DC converters and portcards were also installed in the service cylinder, to power the third disk and read out the modules respectively. Since this extra disk and its associated electronics serve as a pilot run for the Phase I modules, the ensemble is referred to as the pilot system.
 
-\section{Phase I pixel simulation\label{sec:matbudg-phase1}}
+\begin{figure}[hbtp]
+  \begin{center}
+    \includegraphics[width=\cmsFigWidth]{figures/Modules}
+    \caption{-z FPIX half-cylinder, containing one pilot half-disk (foreground) in addition to its two standard half-disks.}
+    \label{fig:pilotmodules_actual}
+  \end{center}
+\end{figure}
+
+The tracker geometry and material description at the time did not include a description of the pilot system. In order to have an accurate representation of the material distribution (often referred to as the material budget) in the tracker for generating MC events with this new pixel detector configuration, the pilot system needed to be added to the description.
+
+A disk on the -z endcap was cloned into the position where the new disk was installed; new objects were declared in the geometry description to represent the shape and material of the new modules. The large uniform blocks roughly representing the FPIX portcard electronics in the service cylinder also were updated, since the material composition had changed due to the addition of copper-containing DC-DC converters and other new electronics for the pilot system's readout. Thus, a new composite material representing the new average material composition was defined. Figure~\ref{fig:pilotmodules_sim} shows a visualization of the simulated pilot disk with its modules. Figure~\ref{fig:pilotelectronics} shows the configuration of FPIX service cylinder electronics prior to the pilot installation, as well as an illustration of the pilot system in the final simulation.
+
+\begin{figure}[hbtp]
+  \begin{center}
+    \includegraphics[width=\cmsFigWidth]{figures/ModulesCorrectedFurther}
+    \caption{Fireworks visualization of the added pilot disk with its modules in the FPIX geometry description.}
+    \label{fig:pilotmodules_sim}
+  \end{center}
+\end{figure}
+
+\begin{figure}[hbtp]
+  \begin{center}
+    \includegraphics[width=1.24\cmsFigWidth]{figures/pilotelectronics_actual}
+    \includegraphics[width=1.24\cmsFigWidth]{figures/PilotGeom_8PortCards2}
+    \caption{(\cmsLeft) The FPIX service cylinder before the pilot system installation. The rightmost two columns of circuitboards are the portcards for the two standard FPIX half-disks. The leftmost column contains only the CCU board for the two FPIX half-disks. The coloured rectangles indicate the intended positions of the pilot electronics to be installed. Red: CCU board. Blue: Portcard. Black: DC-DC converter board. (\cmsRight) Fireworks visualization of the pilot system in the FPIX geometry description. The pilot disk is the third from the left, and the red rectangles represent the portcard electronics in the service cylinder.}
+    \label{fig:pilotelectronics}
+  \end{center}
+\end{figure}
+
+
+\section{Phase I pixel geometry simulation\label{sec:matbudg-phase1}}
 %2. Updates to Phase I description (ongoing; mostly done, describe what is being corrected)
 
-During the next long shutdown at the end of the LHC's Run II, the CMS detector will undergo another round of detector upgrades known as the Phase I upgrade. The pixel detector will acquire one new barrel layer and one new endcap on each side of the interaction point. The cooling system, which currently uses C$_{6}$F$_{14}$ as a coolant, will be replaced with a new cooling system that uses cold carbon dioxide instead. The geometry of the forward pixel endcap support structures will be radically changed, in order to decrease the material budget while still providing full coverage with no dead space.
+During the next long shutdown of the LHC scheduled for 2018, the CMS detector will undergo another round of detector upgrades referred to as the Phase I upgrade~\cite{Dominguez:1481838}, to fix weaknesses in the current systems and improve detector performance at the higher luminosities expected in the future. The pixel detector will acquire one new barrel layer and one new endcap on each side of the interaction point, to provide redundancy in track hit pattern recognition, reduce fake rates at high pileup, and still allow decent tracking performance even if the inner layer undergoes more radiation damage than expected. The cooling system, which currently uses C$_{6}$F$_{14}$ as a coolant, will be replaced with a more lightweight cooling system that uses cold carbon dioxide instead. In general, the design of the upgraded pixel detector's support structures is aimed at decreasing the material budget in the tracking volume.
 
 The CMS geometry description currently has XML files that describe the Phase I pixel geometry and material. The barrel pixel part is mostly accurate aside from a few minor changes involving the dimensions of some support structures and the addition of aluminium cabling in some regions. However, the forward pixel part is very inaccurate and needs significant updating in order to represent the actual upgraded components that will be installed. The main challenges are the following:
 
 \begin{itemize}
-\item The current description of the FPIX endcap support rings are flat, uniform rings, whereas the actual support rings have a zigzagging shape. This is extremely difficult to render using the shapes allowed in DDL. A tentative solution is being developed and tested, in which a series of ``infinitesimally" thin blocks are positioned in the form of a zigzag-shaped ring using a DDAlgorithm that gives each block an appropriate displacement along z as a function of $\phi$.
-\item The zigzag pattern of the blades in the rings is incorrect for some of the rings; comparisons with blueprints of the actual Phase I FPIX rings are currently underway to determine the correct pattern. Also, in simulation, the endcap disks on the +z side are obtained by rotating the -z disks about the y axis, whereas the actual Phase I disks have a mirror symmetry about the xy plane instead.
-\item The shapes of the modules and their support structures need to be refined.
+\item The current description of the FPIX endcap support rings are flat, uniform rings, whereas the actual support rings have a zigzagging shape (see Figure~\ref{fig:phaseI_diskcomparison}). This is extremely difficult to render using the shapes allowed in DDL. A tentative solution is being developed and tested, in which a series of ``infinitesimally" thin blocks are positioned in the form of a zigzag-shaped ring using a DDAlgorithm that gives each block an appropriate displacement along z as a function of $\phi$. Figure~\ref{fig:phaseI_disksolution} illustrates this proposed solution.
+\item The zigzag pattern of the blades in the rings is incorrect for some of the rings, as they do not have the proper symmetry about the y axis. Comparisons with the blueprints of the actual Phase I FPIX blades in their disks are currently underway to determine the correct symmetry.
+\item In simulation, the endcap disks on the +z side are obtained by rotating the -z disks about the y axis, whereas the actual Phase I disks have a mirror symmetry about the xy plane instead.
+\item The shapes of the modules and the blades need to be refined, as they currently have very rough and basic shapes in the simulation (see Figure~\ref{fig:phaseI_bladecomparison}).
 \item The composite material used to describe the Phase I portcard objects is the same material used to describe the portcard objects in the Run I geometry before the installation of the pilot system. This is clearly incorrect, and a new composite material needs to be declared that matches the average composition of the actual Phase I FPIX portcards and DC-DC converters.
 \end{itemize}
 
-I have been involved in this project since spring 2015, and it is still ongoing.
+I have been involved in this project since early 2015, and it is still ongoing.
+
+\begin{figure}[hbtp]
+  \begin{center}
+    \includegraphics[width=2.0\cmsFigWidth]{figures/phaseI_diskcomparison}
+    \caption{Comparison of the shape of the Phase I FPIX half-disks in simulation (\cmsLeft) and in the actual detector being constructed (\cmsRight).}
+    \label{fig:phaseI_diskcomparison}
+  \end{center}
+\end{figure}
+
+\begin{figure}[hbtp]
+  \begin{center}
+    \includegraphics[width=2.0\cmsFigWidth]{figures/phaseI_disksolution}
+    \caption{Illustration of the proposed solution for modelling the zigzag-shaped support rings of the Phase I FPIX half-disks. The blue and red colours denote the three basic legs that make up the zigzag. A DDAlgorithm is used to position thin rectangular blocks into an approximation of the zigzagging shape by arranging them in a ring and giving each block an incremental displacement in the z-direction from the plane of the ring, where the displacement depends on the azimuthal angle $\phi$ around the ring.}
+    \label{fig:phaseI_disksolution}
+  \end{center}
+\end{figure}
+
+\begin{figure}[hbtp]
+  \begin{center}
+    \includegraphics[width=2.0\cmsFigWidth]{figures/phaseI_bladecomparison}
+    \caption{Comparison of the shape of the Phase I FPIX blades and modules in simulation (\cmsLeft) and in the actual detector being constructed (\cmsRight).}
+    \label{fig:phaseI_bladecomparison}
+  \end{center}
+\end{figure}
