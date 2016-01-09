@@ -37,18 +37,44 @@ The solenoid magnet and the various CMS subdetectors will be described in more d
 
 The superconducting solenoid magnet of CMS encloses the tracker detector, ECAL, and part of the HCAL inside a cylindrical bore 6.3 m in diameter and 12.5 m long, weighing 220 tonnes. The solenoid is composed of a 4-layer winding of coils made of NbTi, which is mechanically reinforced by being mixed with an aluminium alloy, an innovative method that makes the coils serve both as conductors and as their own self-stabilizing structural support. At full current, the solenoid carries 19.14 kA, producing a nearly uniform 4 T magnetic field through the volume enclosed by the bore, containing 2.6 GJ of stored energy. The magnetic flux is returned through an iron yoke, consisting of a system of barrel wheels and endcap disks arranged outside the volume of the solenoid in a cylindrical pattern and interleaved with the muon tracking system; the yoke is segmented longitudinally into 5 rings, each 2.536 m long in the z direction, with their centers positioned at z = -5.342 m, -2.686 m, 0 m, +2.686 m, and +5.342 m (rings number -2, -1, 0, 1, and 2 respectively).
 
+\begin{figure}[hbtp]
+  \begin{center}
+    \includegraphics[width=1.24\cmsFigWidth]{figures/cms-magnetcoldmass}
+    \includegraphics[width=1.24\cmsFigWidth]{figures/cms-magnetyoke}
+    \caption{(\cmsLeft) Cold mass of the solenoid magnet, showing the five longitudinal segments. (\cmsRight) Image of the iron yoke of the solenoid magnet, also showing the central barrel that supports the vacuum chamber of the superconducting coil.~\cite{1748-0221-3-08-S08004}}
+    \label{fig:cms-magnet}
+  \end{center}
+\end{figure}
+
+
 \subsection{Tracker\label{sec:cms-tracker}}
 
 5.8 m in length along the z axis and 2.5 m in diameter, the tracker detector is the innermost layer of the CMS detector system. Its purpose is to reconstruct the paths and momenta of charged particles with transverse momentum 1 GeV and upwards, and to provide good impact parameter resolution for accurately reconstructing the positions of secondary vertices, which are displaced from the point of collision and generally are a characteristic signature of long-lived particles such as those from heavy-flavour processes. Since the tracker detector receives higher irradiation than any other part of the detector due to its proximity to the beam line and the interaction point (IP), the tracker detector has been designed to survive and operate in a high-flux environment, with thousands of particles passing through its volume every 25 ns when the LHC is running at its design luminosity. Thus, the tracker has been designed with these challenges in mind in order to yield good position and time resolution.
 
-The tracker detector is composed of two subdetectors. The one closest to the beam line is the pixel detector; its sensors are 100 $\mu$m x 150 $\mu$m pixels, which receive an occupancy on the order of $10^{-4}$ per pixel per bunch crossing. The second and larger subdetector is the silicon strip tracker, whose sensors are silicon strips; since it is located at larger radii than the pixel detector, the fluence of particles that reach it is lower and thus the granularity of the silicon strips can be considerably lower than that of the pixel detector, with strip areas ranging from 10 cm x 80 $\mu$m at intermediate radii for the inner strip tracker (20 $<$ r $<$ 55 cm) and 25 cm x 180 $\mu$m for the outer strip tracker (55 $<$ r $<$ 110 cm), resulting in an occupancy of about 2-3\% for the inner tracker and 1\% for the outer tracker. In total, the CMS tracker detector is comprised of 200 $m^{2}$ of active silicon sensors, providing a coverage of up to $\abs{\eta}$ $<$ 2.5.
+The tracker detector is composed of two subdetectors. The one closest to the beam line is the pixel detector; its sensors are 100 $\mu$m x 150 $\mu$m pixels, which receive an occupancy on the order of $10^{-4}$ per pixel per bunch crossing. The second and larger subdetector is the silicon strip tracker, whose sensors are silicon strips; since it is located at larger radii than the pixel detector, the fluence of particles that reach it is lower and thus the granularity of the silicon strips can be considerably lower than that of the pixel detector, with strip areas ranging from 10 cm x 80 $\mu$m at intermediate radii for the inner strip tracker (20 $<$ r $<$ 55 cm) and 25 cm x 180 $\mu$m for the outer strip tracker (55 $<$ r $<$ 110 cm), resulting in an occupancy of about 2-3\% for the inner tracker and 1\% for the outer tracker. These subsystems are illustrated in Figure~\ref{fig:cms-trackerlayout}.
 
-The support structures that hold the sensors in position are designed to minimize the amount of material used, since energy loss via multiple scattering and extraneous particles produced by nuclear interactions, gamma conversions, and bremsstrahlung in the supporting material can all interfere with tracking efficiency. Because of the high particle fluence passing through the tracker volume during operation, radiation-hard sensors and electronics are required to withstand the radiation dosage; also, an efficient system system of cooling tubes carrying chilled liquid $C_{6}F_{14}$ pervades the tracker volume, keeping it at or below -10 C during operation, thus minimizing radiation damage to the sensors caused either by direct irradiation or by the annealing of radiation-induced defects in the silicon crystal structure through thermal agitation.
+\begin{figure}[hbtp]
+  \begin{center}
+    \includegraphics[width=2.0\cmsFigWidth]{figures/cms-trackerlayout}
+    \caption{Layout of the CMS tracker detector, showing the pixel detector and the subsystems of the silicon strip tracker; each line represents a detector module~\cite{Dominguez:1481838}.}
+    \label{fig:cms-trackerlayout}
+  \end{center}
+\end{figure}
+
+In total, the CMS tracker detector is comprised of 200 $m^{2}$ of active silicon sensors, providing a coverage of up to $\abs{\eta}$ $<$ 2.5. The support structures that hold the sensors in position are designed to minimize the amount of material used, since energy loss via multiple scattering and extraneous particles produced by nuclear interactions, gamma conversions, and bremsstrahlung in the supporting material can all interfere with tracking efficiency. Because of the high particle fluence passing through the tracker volume during operation, radiation-hard sensors and electronics are required to withstand the radiation dosage; also, an efficient system system of cooling tubes carrying chilled liquid $C_{6}F_{14}$ pervades the tracker volume, keeping it at or below -10 C during operation, thus minimizing radiation damage to the sensors caused either by direct irradiation or by the annealing of radiation-induced defects in the silicon crystal structure through thermal agitation.
 
 \subsubsection{Pixel detector\label{sec:cms-pixel}}
 % barrel and disks, design of sensors, electronics, readout
 
 The pixel detector is the innermost layer of the tracker detector, with three concentric cylindrical barrel layers complemented by two endcap disks on either side of the interaction point. The barrel layers are located at radii 4.4, 7.3, and 10.2 cm from the beam line, extending out to 2.9 m from the interaction point in the $\pm$z directions. Two endcap disks are located at z $=$ $\pm$34.5 cm and $\pm$46.5 cm, with inner radius 6 cm and outer radius 15 cm. Both the barrel cylinders and endcap disks are split in halves along the y axis for ease of extraction and access. Each sensor has an area of 100 $\mu$m x 150 $\mu$m; the nearly square design is intended to provide good cluster size and hit resolution in both r$\phi$ and z for the barrel and r$\phi$ and r for the endcaps, as both of these coordinates are needed for measuring track impact parameters.
+
+\begin{figure}[hbtp]
+  \begin{center}
+    \includegraphics[width=2.0\cmsFigWidth]{figures/cms-pixellayout}
+    \caption{Layout of the pixel detector: barrel layers and endcap disks~\cite{Karimaki:368412}. The magenta wedges on the endcap disks are carbon-fibre blades, which hold plaquettes (rectangular arrangements of pixel sensors that come in five different sizes). The black rectangles in the barrel layers are the barrel modules (2x8 rectangular arrangements of pixel sensors), mounted on rectangular carbon-fibre blades.}
+    \label{fig:cms-pixellayout}
+  \end{center}
+\end{figure}
 
 In the barrel, the sensors are arranged 2 x 8 on rectangular modules (or 1 x 8 along the edges of the half-cylinders). In each endcap half-disk, 12 trapezoidal support structures called blades hold the sensors, which come in arrangements of five different plaquette sizes (1 x 2, 2 x 3, 2 x 4, 1 x 5, and 2 x 5) in order to achieve full coverage of the wedge-shaped area of the blade. Altogether, the pixel detector covers a pseudorapidity range of $\abs{\eta}$ $<$ 2.5.
 
