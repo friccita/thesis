@@ -38,12 +38,12 @@ Events are required to have at least one reco muon that satisfies the following 
 		\item Number of pixel hits $>$ 0
 		\item More than 5 tracker layers with hits
 	\end{itemize}
-	\item Relative isolation $I_{\text{rel}} <$ 0.12, where the $I_{\text{rel}}$ of a muon is defined as the pileup-corrected sum of the transverse energy of the photons and charged and neutral hadrons in a cone of radius $\Delta$R = $\sqrt{\Delta\eta^{2} + \Delta\phi^{2}} =$ 0.4 about the muon divided by the $p_T$ of the muon.
+	\item Relative isolation $I_{\text{rel}} <$ 0.12, where the $I_{\text{rel}}$ of a muon is defined as the pileup-corrected sum of the transverse energy of the photons and charged and neutral hadrons in a cone of radius $\Delta$R = $\sqrt{\Delta\eta^{2} + \Delta\phi^{2}} =$ 0.4 about the muon, divided by the $p_T$ of the muon.
         \item Isolation from nearby leptons located within a cone of $\Delta$R $=$ 0.4 around the trigger muon, where nearby lepton ID criteria are as follows:
           \begin{itemize}
           \item \textbf{Electrons:} \texttt{reco::GsfElectron} passing PF reconstruction with $p_T >$ 7 GeV and $\abs{\eta} <$ 2.5 (same as~\cite{Chatrchyan:2013mxa})
           \item \textbf{Muons:} PF muon with $p_T >$ 5 GeV and $\abs{\eta} <$ 2.4 passing the soft muon ID described in Section~\ref{sec:evtsel-softmu} and~\cite{CMS:2010uta}
-          \item \textbf{Taus:} HPS PF tau with $p_T >$ 10 GeV and $\abs{\eta} <$ 2.3, passing \texttt{DecayModeFinding} and \texttt{MediumCombinedIsolationDBSumPtCorr} discriminators, reconstructed from a PF jet that has been cleaned of the trigger muon with the same jet-cleaning algorithm described in Section~\ref{sec:evtsel-tauID} (the $p_T$ cut at 10 GeV rather than 20 GeV was chosen to make the veto more stringent)
+          \item \textbf{Taus:} HPS PF tau with $p_T >$ 10 GeV and $\abs{\eta} <$ 2.3, passing \texttt{DecayModeFinding} and \texttt{MediumCombinedIsolationDBSumPtCorr} discriminators, reconstructed from a PF jet that has been cleaned of the trigger muon with the same jet-cleaning algorithm described in Section~\ref{sec:evtsel-tauID} (the $p_T$ cut at 10 GeV rather than 20 GeV was chosen to make the veto more stringent). The DecayModeFinding discriminator requires that the reconstructed tau 
           \end{itemize}
 \end{itemize}
 
