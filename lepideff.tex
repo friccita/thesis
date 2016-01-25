@@ -1,6 +1,10 @@
 \chapter{Muon and tau selection efficiency validation\label{sec:lepideff}}
 \sloppy
 
+The methods of identification for particle types such as muons and taus have their own inherent inefficiencies, related to factors such as acceptance and detector response (see Section~\ref{sec:cms-sim} for a discussion of reconstruction efficiencies). The total efficiency for an ID algorithm in data may also differ from the efficiency in simulation, due to the fact that simulations can never perfectly represent physical processes or detector responses but are ultimately an approximation. To achieve better agreement between ID efficiency of a certain type of particle in data and simulation, scale factors are applied to MC events, so that the distributions of their relevant kinematic parameters agree with measured reconstruction efficiencies in data.
+
+In this search, the data/MC scale factors used were the standard ones approved by CMS for the corresponding physics objects being identified. However, the uncertainties on the scale factors were often non-standard, due to some of the non-standard identification methods used (e.g., the jet-cleaning method for boosted hadronic tau ID). The uncertainties on the scale factors are nuisance parameters affecting the predicted signal yield, and also the predicted background yield used for the MC validation of the data-driven background-modelling method. This chapter presents the studies that were done to assess the uncertainties on the data/MC scale factors of the identification efficiencies for the most important physics objects in the selection: the trigger muon, the soft $\tau_{\mu}$ candidate, and the $\tau_{\text{h}}$ candidate.
+
 \section{Uncertainties on trigger muon data/MC scale factors\label{sec:lepideff-triggermu}}
 
 %tight id uncertainty
