@@ -1,5 +1,11 @@
 \chapter{Event reconstruction and simulation\label{sec:recosim}}
 
+Once all the detector hits and deposits produced in a bunch collision have been recorded and stored, a sophisticated series of pattern-recognition algorithms takes these disparate data and assembles them into a picture of what actually occurred in that collision. Particle energies and trajectories are reconstructed, and particle types are identified.
+
+Particle reconstruction algorithms are used not only for experimental data, but also for datasets of simulated physics events. Event simulation is an important component of particle physics research, as it provides a way to test data against theoretical predictions.
+
+In this chapter, an overview is given of the standard CMS particle reconstruction procedure, and of how event reconstruction is typically performed.
+
 \section{Particle reconstruction\label{sec:cms-reco}}
 % Particle Flow (list all types of particles, focus on muons, taus, jets, MET)
 Before reaching a relatively stable final state, the immediate products of the proton-proton collisions in the LHC tunnel undergo various interactions such as radiation, decays, and/or hadronization. The resulting particles travel through and interact with the material of the CMS detector, which records their passage and reconstructs their paths and energies, which are then used to identify the particles and deduce the interactions that they underwent. The set of algorithms used predominantly for particle reconstruction and identification in the CMS experiment is called Particle Flow~\cite{CMS-PAS-PFT-09-001}, often abbreviated as PF.
