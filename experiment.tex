@@ -334,9 +334,14 @@ The uniformity of the magnetic flux density inside the detector volume is illust
 
 \subsection{Muon system\label{sec:cms-muon}}
 % DT, CSC, RPC, readouts for all
-Since high-energy muons can penetrate several metres of solid matter without losing much energy via interactions with the medium, they are expected to be the only particles (not counting neutrinos) that survive past the tracker and calorimeter layers of the CMS detector. Thus, the muon detector of the CMS experiment is its outermost layer, located outside the solenoid. Like the rest of the CMS subsystems, the muon system is comprised of a barrel region and two endcap regions. The muon detector chambers are mounted on the flux return yoke system. The barrel is made of four layers called stations, and its longitudinal segmentation is dictated by the segmentation of the yoke into 5 rings, while the azimuthal segmentation comes from the iron ribs of the yoke that serve as support structures for the solenoid coil cryostat and the HCAL outer calorimeter~\cite{MuonTDR}. The goals of the muon system are to provide good reconstruction of muon momentum and charge over the entire kinematic range of the LHC, as well as to provide the capability to trigger on events in the detector (the concept of triggering is explained in Section~\ref{sec:cms-triggerdaq}). To these ends, the muon system employs three different kinds of gas ionization detector technology: drift tubes (DTs), cathode strip chambers (CSCs), and resistive plate chambers (RPCs).
+  
+Muons tend to undergo far lower radiative losses in detector material than electrons with similar kinetic energy and are consequently cleaner to reconstruct. Because they are expected to be the only particles (not counting neutrinos) that survive past the tracker and calorimeter layers, the muon detector system is the outermost layer of the CMS detector, located outside the solenoid. Muons play a major role in many of the physics signatures sought at the LHC, such as the decay $H\rightarrow$$ZZ*\rightarrow$$4\mu$, and so the experiment benefits from having a muon system with wide angular coverage and efficienct reconstruction.
 
-The DT system is located only in the barrel of the muon detector; the choice to use DTs was based on the low expected particle flux and low magnetic field in the barrel. The smallest sensitive element is the drift cell, with a transverse dimension of 21 mm and an anode wire of roughly 2.4 m in length. Figure~\ref{fig:cms-muon-DTcell} shows a cross-section of a DT cell. The cells contain an 85\%:15\% mixture of Argon and CO$_2$ gas; when a charged particle passes through, the ionization of the gas results in a charge carrier cascade that is picked up by the anode and cathode wires and amplified by the readout system.
+Like the rest of the CMS subsystems, the muon system is comprised of a barrel region and two endcap regions. The muon detector chambers are mounted on the flux return yoke system. The barrel is made of four layers called stations, and its longitudinal segmentation is dictated by the segmentation of the yoke into 5 rings, while the azimuthal segmentation comes from the iron ribs of the yoke that serve as support structures for the solenoid coil cryostat and the HCAL outer calorimeter~\cite{MuonTDR}.
+
+The goals of the muon system are to provide reliable reconstruction of muon momentum and charge over the entire kinematic range of the LHC, as well as to provide the capability to trigger on events in the detector (the concept of triggering is explained in Section~\ref{sec:cms-triggerdaq}). To these ends, the muon system employs three different kinds of gas ionization detector technology: drift tubes (DTs), cathode strip chambers (CSCs), and resistive plate chambers (RPCs).
+
+The DT system is located only in the barrel of the muon detector. The choice to use DTs was based on the low expected particle flux and low magnetic field in the barrel. The smallest sensitive element is the drift cell, with a transverse dimension of 21 mm and an anode wire of roughly 2.4 m in length. Figure~\ref{fig:cms-muon-DTcell} shows a cross-section of a DT cell. The cells contain an 85\%:15\% mixture of Argon and CO$_2$ gas; when a charged particle passes through, the ionization of the gas results in a charge carrier cascade that is picked up by the anode and cathode wires and amplified by the readout system.
 
 \begin{figure}[hbtp]
   \begin{center}
@@ -400,6 +405,16 @@ Finally, there is the RPC system, which consists of gaseous parallel-plate detec
 An RPC chamber in the barrel has a rectangular shape and consists of 2 or 3 double-gap modules with up to 96 strips per double-gap, in which the strips run parallel to the beam direction; there are a total of 480 barrel chambers. In the endcap, chambers also have a double-gap structure but are trapezoidal in shape; each chamber has 32 strips running radially and covers 20$^{\circ}$ in $\phi$ in the innermost ring and 10$^{\circ}$ in $\phi$ in the outermost ring. Figure~\ref{fig:cms-muon-RPCbarrel} shows the arrangement of the barrel RPCs in the iron yoke, as well as an example diagram of a 3-gap barrel RPC module. Figure~\ref{fig:cms-muon-RPCendcap} shows an analogous layout of the RPC endcap system, and a diagram of a typical RPC chamber.
 
 Front-end electronics boards are always located at the strip end of both barrel and endcap chambers, to minimize the signal arrival time with respect to the interaction point. The RPCs provide timing resolution on the order of less than the 25 ns between bunch crossings, allowing the precise assignment of muon tracks to bunch crossings as well as transverse momentum measurement.
+
+\begin{figure}[hbtp]
+  \begin{center}
+    \includegraphics[width=2.0\cmsFigWidth]{figures/cms-muon-performance-Z}
+    \caption{Relative $p_T$ resolution for muons from $Z$ decays, measured in 7 TeV LHC data (black curves) and in MC events (red curves), using two different algorithms, MuScleFit and SIDRA~\cite{Chatrchyan:2012xi}.}
+    \label{fig:cms-muon-performance}
+  \end{center}
+\end{figure}
+
+All in all, the muon system achieves a high relative $p_T$ resolution, measuring 1.3-2.0\% in the barrel and less than 6\% in the endcaps~\cite{Chatrchyan:2012xi}. The results of a study done in 7-TeV data and MC events are displayed in Figure~\ref{fig:cms-muon-performance}; in this plot of relative muon $p_T$ resolution versus $\eta$, the relative $p_T$ resolution is shown not to exceed 6\%.
 
 \section{Triggering and data acquisition\label{sec:cms-triggerdaq}}
 % rationale, L1, HLT; muon, calorimeter, global
