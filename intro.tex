@@ -12,15 +12,32 @@
 
 \section{The Standard Model\label{sec:SM}}
 
-Elementary particle physics is the study of the most fundamental components of matter: determining what these components are, and how they behave. The word ``atom" is derived from the ancient Greek word for ``indivisible"; the discovery that atoms are not in fact indivisible but are themselves made up of smaller components -- electrons, protons, and neutrons -- set the stage for the ongoing search for ever-smaller and more fundamental building blocks of matter. This has culminated in the present day with the Standard Model of fundamental physics. This chapter will present an overview of the Standard Model, its deficiencies, and the theory of supersymmetry that has been developed to address some of these deficiencies.
+This chapter presents an overview of some of the main theoretical developments leading up to the Standard Model of fundamental physics, followed by an overview of the theory of supersymmetry and how it addresses some of the Standard Model's deficiencies.
 
 \subsection{A little background\label{sec:SM-history}}
 
-Classical physics differentiates clearly between matter particles, which behave as pointlike objects, and radiation, which behaves as a wave. However, when physics pushed to explore phenomena at the subatomic scale, the classical picture proved to be incorrect. The discovery of phenomena such as the photoelectric effect and the Compton effect, which point to the quantization of radiation, challenged classical assumptions about the wave behavior of light. Similarly, observations of diffraction behavior in electron beams revealed that treating particles as pointlike bodies is not sufficient, and that beams of electrons can in fact behave like light waves~\cite{MessiahPhysics}. The quest to understand this wave-particle duality led to the development of quantum mechanics to explain physical phenomena at the microscopic scale.
+Classical physics differentiates clearly between matter particles, which behave as localized objects, and radiation, which behaves as a wave. However, when physics pushed to explore phenomena at the subatomic scale, the classical picture proved to be incorrect. The discovery of phenomena such as the photoelectric effect and the Compton effect, which point to the quantization of radiation, challenged classical assumptions about the wave behavior of light. Similarly, observations of diffraction behavior in electron beams revealed that treating particles as pointlike bodies is not sufficient, and that beams of electrons can in fact behave like light waves~\cite{MessiahPhysics}. The quest to understand this wave-particle duality led to the development of quantum mechanics to explain physical phenomena at the microscopic scale.
 
 %In quantum mechanics, the physical state of a particle or system of particles is characterized by a wavefunction, which depends on the particle coordinates in space and time. Measurable properties of particles (such as position and momentum) and the evolution of the physical state of the system can all be derived from this wavefunction. The wavelike behavior of particles at the subatomic scale is reflected in the plane-wave wavefunction for free particles, and the bound-state wavefunctions that are related to standing waves, with discrete (quantized) energy levels available to the particles in the bound system.
 
-Quantum field theory developed from the need to describe the dynamics of relativistic elementary particles, for which nonrelativistic quantum mechanics is insufficient. For instance, the Klein-Gordon and Dirac equations of motion for a single particle would yield nonphysical negative energy solutions. Quantum field theory interprets particles as quantized excitations of fields~\cite{PeskinSchroederPhysics}; with this formalism, the negative energy states of the Klein-Gordon and Dirac equations acquire a physical interpretation -- for each particle, there is an antiparticle, identical to that particle in every way except in having the opposite electric charge. Experimental validation of this theory came with the discovery of the positron -- the antiparticle of the electron -- in cloud-chamber studies of cosmic rays~\cite{BettiniPhysics}.
+Quantum field theory developed from the need to describe the dynamics of relativistic elementary particles, for which nonrelativistic quantum mechanics is insufficient. Consider the Klein-Gordon equation
+
+\begin{equation}
+(\partial^{\mu}\partial_{\mu} + m^{2})\phi = 0\newline
+\label{eq:KG}
+\end{equation}
+which is the relativistic wave equation of motion for scalar fields $\phi$, whose excitations are spin-0 particles. Without going into the mathematical derivation, the solutions of the Klein-Gordon equation are linear combinations of positive and negative energy states $e^{+ip\cdot x}$ and $e^{-ip\cdot x}$, with $p$ and $x$ being 4-momentum and spacetime position. The positive energy states 
+
+%and the Dirac equation:
+
+%\begin{equation}
+%(i\gamma^{\mu}\partial_{\mu} - m)\psi = 0
+%\label{eq:Dirac}
+%\end{equation}
+%which are the relativistic wave equations of motion for spin-0 and spin-$\frac{1}{2}$ particles respectively.
+
+
+For instance, the Klein-Gordon and Dirac equations of motion for a single particle would yield nonphysical negative energy solutions. Quantum field theory interprets particles as quantized excitations of fields~\cite{PeskinSchroederPhysics}; with this formalism, the negative energy states of the Klein-Gordon and Dirac equations acquire a physical interpretation -- for each particle, there is an antiparticle, identical to that particle in every way except in having the opposite electric charge. Experimental validation of this theory came with the discovery of the positron -- the antiparticle of the electron -- in cloud-chamber studies of cosmic rays~\cite{BettiniPhysics}.
 
 Particles interact via four fundamental forces: the strong force, electromagnetism, the weak force, and gravity. Developing field theory descriptions for the fundamental forces has led to predictions of the existence of many new particles. Over the decades, high-energy physics experiments have confirmed the existence of these particles. The Standard Model is the quantum field theory that provides the most successful description to date of all experimentally observed fundamental particles and their interactions. The following section presents a summary of the current state of the Standard Model and its categorization of all known fundamental particles.
 
@@ -46,14 +63,7 @@ In quantum mechanics, the dynamics and evolution of a system of particles can al
 
 By Noether's theorem, the invariance of $\mathcal{L}$ under the transformations of a symmetry group implies the conservation of some quantity. The conservation of electric charge, for instance, results from the invariance of the electromagnetic Lagrangian under U(1) transformations. Fundamental interactions are governed by the symmetry of their Lagrangians under local transformations called gauge transformations, with transitions between states constrained by the conservation of quantum numbers associated with the mediating interaction. Gauge bosons come from the generators of the symmetry group, each of which gives rise to a corresponding gauge field.
 
-The Standard Model belongs to the symmetry group SU(3)$\times$SU(2)$\times$U(1). The Standard Model Lagrangian is:
-
-\begin{equation}
-\mathcal{L}_{SM} = 
-\label{eq:LagrangianSM}
-\end{equation}
-
-
+The Standard Model belongs to the symmetry group SU(3)$\times$SU(2)$\times$U(1).
 The invariance of the QCD portion of the Lagrangian under the SU(3) gauge group requires that gluons, the generators of the SU(3) symmetry, be massless. The electroweak portion of the Lagrangian belongs to the SU(2)$\times$U(1) gauge group; the gauge fields $B_{\mu}$ (from the U(1) group) and \textbf{W}$^1$$_{\mu}$, \textbf{W}$^2$$_{\mu}$, and \textbf{W}$^3$$_{\mu}$ (from the SU(2) group) give rise to gauge bosons that mediate electroweak interactions~\cite{Bednyakov:2007pz}.
 
 Hadrons are bound states of quarks and/or antiquarks, held together by the strong interaction. Aside from the bound quarks and antiquarks, which are referred to as the ``valence quarks," the gluons within the hadron will also produce fleeting quark-antiquark pairs called ``sea quarks" that promptly annihilate back into gluons. The constituents of hadrons -- valence quarks, sea quarks, and gluons -- are collectively known as partons. The SU(3) invariance of hadronic wavefunctions restricts the only possible hadronic states to be SU(3) singlets -- i.e., states with a net zero color charge, and the property of quark confinement prohibits the existence of free quarks and antiquarks and only allows them to exist in colorless bound states. The probability density for each parton to be found with a fraction $x$ of the total hadronic 4-momentum is described by its parton distribution function (PDF), which is determined by the strong interactions among the various partons in the hadron. In practice, PDFs cannot be calculated from theory alone because of the non-perturbative nature of QCD interactions at low energies; thus, they can only be measured experimentally~\cite{BettiniPhysics}.
