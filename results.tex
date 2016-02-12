@@ -53,9 +53,11 @@ As can be seen from Table~\ref{tab:results}, after the full selection, the obser
 
 \section{Limit calculation with the $CL_{s}$ method\label{sec:results-limit-theory}}
 
-Various different statistical techniques exist for establishing whether and how observations agree with the background-only (or null) hypothesis and the signal + background hypothesis, where the degree of compatibility with the signal + background hypothesis is expressed in terms of a confidence level. In this search, the modified frequentist method -- also known as $CL_{s}$ -- is used to set conservative limits on the branching ratio Br($H\rightarrow$$aa\rightarrow4\tau$. A brief explanation of the $CL_{s}$ method follows here, based on the overview given in~\cite{CMS-NOTE-2011-005}; a more in-depth treatment can be found in~\cite{Read}.
+Various statistical techniques exist for assessing the compatibility of observed data with the background-only (or null) hypothesis and the signal + background hypothesis. With some techniques, one can set a confidence limit on the parameter under study, such as the signal process cross section, beyond which one can exclude the signal hypothesis with a desired level of confidence (the conventional confidence level 95\% is used in this search).
 
-The predicted background and signal yields are affected by systematic uncertainties due to various sources. These uncertainties are represented by a set of nuisance parameters $\theta$, such that the predicted signal and background yields can be expressed as functions of these nuisance parameters: $s(\theta)$ and $b(\theta)$.
+In this search, the modified frequentist method -- also known as $CL_{s}$ -- is used to set conservative upper limits on the branching ratio Br($H\rightarrow$$aa\rightarrow4\tau$. A brief explanation of the $CL_{s}$ method follows here, based on the overview given in~\cite{CMS-NOTE-2011-005}; a more in-depth treatment can be found in~\cite{Read}.
+
+The expected background and signal yields $b$ and $s$ come respectively from the Standard Model and from the theory predicting the signal process (in this case, the NMSSM). The values of $b$ and $s$ are affected by systematic uncertainties due to various sources, which need to be accounted for in the design of the experiment. These uncertainties are represented by a set of nuisance parameters $\theta$, and thus the predicted signal and background yields can be considered functions of these nuisance parameters: $s(\theta)$ and $b(\theta)$.
 
 Given the observed data, the set of nuisance parameters $\theta$, $s(\theta)$, and $b(\theta)$, a likelihood function $\mathcal{L}$ can be constructed:
 
@@ -64,9 +66,9 @@ Given the observed data, the set of nuisance parameters $\theta$, $s(\theta)$, a
 \label{eq:likelihood}
 \end{equation}
 
-In the case of this simple counting experiment with a single bin for the $m_{\mu+\text{had}} > 4 GeV$ search region (for a given M$_T$ region), the Poisson function is simply the Poisson probability for observing $n$ events in the search region bin. The variable $\mu$ is the signal strength modifier, which scales all predicted Higgs production cross sections by a factor of $\mu$. The posterior function $\rho(\hat{\theta} \vert \theta)$ is the probability distribution function (p.d.f.) for the systematic uncertainties. In this study, for sources not related to statistical effects, the nuisance parameter p.d.f.'s are parametrized by log-normal functions, while nuisance parameters errors related to statistical uncertainties in event counts are parametrized by gamma functions~\cite{CombinedTwiki}. For a full list and description of the sources of systematic uncertainty accounted for in this search, see Section~\ref{sec:results-systematics}.
+In the case of this simple counting experiment with a single bin for the $m_{\mu+\text{had}} > 4 GeV$ search region (for a given M$_T$ region), the Poisson function is simply the Poisson probability for observing $n$ events in the search region bin. The variable $\mu$ is the signal strength modifier, which scales all predicted Higgs production cross sections by a factor of $\mu$. The posterior function $\rho(\hat{\theta} \vert \theta)$ is the probability distribution function (p.d.f.) for the systematic uncertainties. In this study, for sources of uncertainty not related to sample size, the nuisance parameter p.d.f.'s are parametrized by log-normal functions, while nuisance parameters errors related to statistical uncertainties in sample sizes are parametrized by gamma functions~\cite{CombinedTwiki}. For a full list and description of the sources of systematic uncertainty accounted for in this search, see Section~\ref{sec:results-systematics}.
 
-From this likelihood function, a test statistic $q_{\mu}$ is defined for a given $\mu$ as:
+From the likelihood function, the test statistic $q_{\mu}$ is defined for a given $\mu$ as:
 
 \begin{equation}
 q_{\mu} = -2\ln\frac{\mathcal{L}(data \vert \mu,\hat{\theta}_{\mu})}{\mathcal{L}(data \vert \hat{\mu},\hat{\theta})}
@@ -75,14 +77,14 @@ q_{\mu} = -2\ln\frac{\mathcal{L}(data \vert \mu,\hat{\theta}_{\mu})}{\mathcal{L}
 
 Here, $\hat{\mu}$ and $\hat{\theta}$ are the value of $\mu$ and the values of the nuisance parameters $\theta$ that give the global maximum of $\mathcal{L}$, and $\hat{\theta}_{\mu}$ is the set of values of $\theta$ that maximize $\mathcal{L}$ for the given value of $\mu$. One can then find the observed value of $q_{\mu}$ given the observed data and the value of $\mu$ used in the signal+background hypothesis, as well as the values $\theta^{obs}_{0}$ and $\theta^{obs}_{\mu}$ of the nuisance parameters that maximize the likelihood for the background-only hypothesis and the signal+background hypothesis respectively.
 
-Monte Carlo simulation is then used to generate p.d.f.'s $f(q_{0}\vert\mu,\theta^{obs}_{0})$ and $f(q_{\mu}\vert\mu,\theta^{obs}_{\mu})$ for the background-only hypothesis and signal+background hypothesis respectively. One can then define the $CL_{s}$ parameter as follows:
+Monte Carlo simulation is used to generate p.d.f.'s $f(q_{0}\vert\mu,\theta^{obs}_{0})$ and $f(q_{\mu}\vert\mu,\theta^{obs}_{\mu})$ for the background-only hypothesis and signal+background hypothesis respectively. One can then define the $CL_{s}$ parameter as follows:
 
 \begin{equation}
 CL_{s}(\mu) = \frac{\int_{q^{obs}_{\mu}}^{\infty} f(q_{\mu}\vert\mu,\theta^{obs}_{\mu}) dq_{\mu}}{\int_{q^{obs}_{0}}^{\infty} f(q_{\mu}\vert0,\theta^{obs}_{0}) dq_{\mu}}
 \label{eq:CLS-def}
 \end{equation}
 
-If (1 - $CL_{s}$) is less than the desired confidence level (the conventional confidence level 95\% is used in this search), then the signal+background hypothesis is said to be excluded at that level.
+If (1 - $CL_{s}$) is less than the desired confidence level of 95\%, then the signal+background hypothesis is said to be excluded at that level.
 
 \section{Systematic uncertainties\label{sec:results-systematics}}
 
