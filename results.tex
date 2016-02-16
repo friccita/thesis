@@ -1,6 +1,6 @@
 \chapter{Results and interpretation\label{sec:results}}
 
-This chapter presents the final results of the search after the signal region is unblinded, followed by the interpretation of these results in terms of a model-independent limit on the cross section Br($H\rightarrow$$aa$$\rightarrow4\tau$).
+This chapter presents the final results of the search after the signal region is unblinded, followed by the interpretation of these results in terms of a model-independent limit on the branching ratio Br($H\rightarrow$$aa$$\rightarrow4\tau$).
 
 \section{Observed and expected results\label{sec:results-obsexp}}
 
@@ -53,7 +53,7 @@ As can be seen from Table~\ref{tab:results}, after the full selection, the obser
 
 \section{Limit calculation with the $CL_{s}$ method\label{sec:results-limit-theory}}
 
-Various statistical techniques exist for assessing the compatibility of observed data with the background-only (or null) hypothesis and the signal + background hypothesis. With some techniques, one can set a confidence limit on the parameter under study, such as the signal process cross section, beyond which one can exclude the signal hypothesis with a desired level of confidence (the conventional confidence level 95\% is used in this search).
+Various statistical techniques exist for assessing the compatibility of observed data with the background-only (or null) hypothesis and the signal + background hypothesis. With these techniques, one can set an upper limit on the parameter under study, such as the signal process cross section, beyond which one can exclude the signal hypothesis with a desired level of confidence (the conventional confidence level 95\% is used in this search).
 
 In this search, the modified frequentist method -- also known as $CL_{s}$ -- is used to set conservative upper limits on the branching ratio Br($H\rightarrow$$aa\rightarrow4\tau$. A brief explanation of the $CL_{s}$ method follows here, based on the overview given in~\cite{CMS-NOTE-2011-005}; a more in-depth treatment can be found in~\cite{Read}.
 
@@ -66,16 +66,16 @@ Given the observed data, the set of nuisance parameters $\theta$, $s(\theta)$, a
 \label{eq:likelihood}
 \end{equation}
 
-In the case of this simple counting experiment with a single bin for the $m_{\mu+\text{had}} > 4 GeV$ search region (for a given M$_T$ region), the Poisson function is simply the Poisson probability for observing $n$ events in the search region bin. The variable $\mu$ is the signal strength modifier, which scales all predicted Higgs production cross sections by a factor of $\mu$. The posterior function $\rho(\hat{\theta} \vert \theta)$ is the probability distribution function (p.d.f.) for the systematic uncertainties. In this study, for sources of uncertainty not related to sample size, the nuisance parameter p.d.f.'s are parametrized by log-normal functions, while nuisance parameters errors related to statistical uncertainties in sample sizes are parametrized by gamma functions~\cite{CombinedTwiki}. For a full list and description of the sources of systematic uncertainty accounted for in this search, see Section~\ref{sec:results-systematics}.
+In the case of this simple counting experiment with a single bin for the $m_{\mu+\text{had}} > 4$ GeV search region (for a given M$_T$ region), the Poisson function is simply the Poisson probability for observing $n$ events in the search region bin. The variable $\mu$ is the signal strength modifier, which scales all predicted Higgs production cross sections by a factor of $\mu$. The posterior function $\rho(\hat{\theta} \vert \theta)$ is the probability distribution function (p.d.f.) for the systematic uncertainties. In this study, for sources of uncertainty not related to stochastic effects or sample size, the nuisance parameter p.d.f.'s are parametrized by log-normal functions, while nuisance parameters errors related to statistical uncertainties in sample sizes are parametrized by gamma functions~\cite{CombinedTwiki}. For a full list and description of the sources of systematic uncertainty accounted for in this search, see Section~\ref{sec:results-systematics}.
 
 From the likelihood function, the test statistic $q_{\mu}$ is defined for a given $\mu$ as:
 
 \begin{equation}
-q_{\mu} = -2\ln\frac{\mathcal{L}(data \vert \mu,\hat{\theta}_{\mu})}{\mathcal{L}(data \vert \hat{\mu},\hat{\theta})}
+q_{\mu} = -2\ln\frac{\mathcal{L}(n \vert \mu,\hat{\theta}_{\mu})}{\mathcal{L}(n \vert \hat{\mu},\hat{\theta})}
 \label{eq:test-statistic}
 \end{equation}
 
-Here, $\hat{\mu}$ and $\hat{\theta}$ are the value of $\mu$ and the values of the nuisance parameters $\theta$ that give the global maximum of $\mathcal{L}$, and $\hat{\theta}_{\mu}$ is the set of values of $\theta$ that maximize $\mathcal{L}$ for the given value of $\mu$. One can then find the observed value of $q_{\mu}$ given the observed data and the value of $\mu$ used in the signal+background hypothesis, as well as the values $\theta^{obs}_{0}$ and $\theta^{obs}_{\mu}$ of the nuisance parameters that maximize the likelihood for the background-only hypothesis and the signal+background hypothesis respectively.
+Here, $\hat{\mu}$ and $\hat{\theta}$ are the value of $\mu$ and the values of the nuisance parameters $\theta$ that give the global maximum of $\mathcal{L}$, and $\hat{\theta}_{\mu}$ is the set of values of $\theta$ that maximize $\mathcal{L}$ for the given value of $\mu$. One can then find the observed value of $q_{\mu}$ given the observed number of events $n$ and the value of $\mu$ used in the signal+background hypothesis, as well as the values $\theta^{obs}_{0}$ and $\theta^{obs}_{\mu}$ of the nuisance parameters that maximize the likelihood for the background-only hypothesis and the signal+background hypothesis respectively.
 
 Monte Carlo simulation is used to generate p.d.f.'s $f(q_{0}\vert\mu,\theta^{obs}_{0})$ and $f(q_{\mu}\vert\mu,\theta^{obs}_{\mu})$ for the background-only hypothesis and signal+background hypothesis respectively. One can then define the $CL_{s}$ parameter as follows:
 
@@ -84,7 +84,9 @@ CL_{s}(\mu) = \frac{\int_{q^{obs}_{\mu}}^{\infty} f(q_{\mu}\vert\mu,\theta^{obs}
 \label{eq:CLS-def}
 \end{equation}
 
-If (1 - $CL_{s}$) is less than the desired confidence level of 95\%, then the signal+background hypothesis is said to be excluded at that level.
+If (1 - $CL_{s}(\mu)$) is less than the desired confidence level of 95\%, then the signal+background hypothesis is said to be excluded at that level, and an upper limit can be set on the parameter of interest (i.e., the branching ratio Br($H\rightarrow$$aa$$\rightarrow4\tau$)) based on the value of $\mu$ for which (1 - $CL_{s}(\mu)$) $<$ 95\%.
+
+In calculating observed limits, the value of $n$ in Equation~\ref{eq:test-statistic} is the experimentally observed number of events in the search region. Expected limits are calculated by taking $n$ to be equal to the predicted number of background events in the search region; these are the limits that would be set if the experimental observation were to coincide exactly with the background-only hypothesis prediction. The signal model can be excluded where the observed limits are lower than the expected limits (meaning that fewer events were observed than were expected from the background model).
 
 \section{Systematic uncertainties\label{sec:results-systematics}}
 
@@ -110,7 +112,7 @@ The following is a list of the sources of systematic uncertainty used in the cal
 
 \subsection{Limit calculation\label{sec:results-limitcalc}}
 
-Algorithms from the \texttt{HiggsAnalysis/CombinedLimit} package (full code found at~\cite{CombinedGitHub}, documented in~\cite{CombinedTwiki}) are used to evaluate expected and observed limits in this search. The signal strengths calculated by this package are defined as:
+Algorithms from the \texttt{HiggsAnalysis/CombinedLimit} package (full code found at~\cite{CombinedGitHub}, documented in~\cite{CombinedTwiki}) are used to calculate the limits in this search. The signal strengths calculated by this package are defined as:
 
 \begin{equation}
 \mu = \frac{\sigma_{\text{prod}}\cdot Br(H\rightarrow aa \rightarrow4\tau)}{(\sigma_{\text{prod}})_{\text{expected}}} \\
@@ -119,7 +121,7 @@ Algorithms from the \texttt{HiggsAnalysis/CombinedLimit} package (full code foun
 
 where $\sigma_{\text{prod}}$ is the production cross-section for the channel of interest and the denominators are calculated using the SM Higgs production cross sections given in~\cite{LHCHXSWG} (e.g., $\sigma$(ggH) = 19.27 fb and $\sigma$(WH) = 0.7046 fb for $m_{H}$ = 125.0 GeV). For the cases of WH and ZH, the production cross-sections are considered to be multiplied by the appropriate SM branching ratio for the decay of the vector boson to leptons. Since Standard Model Higgs production cross-sections are assumed, the cross-sections at the numerator and denominator cancel out, leaving $\mu$ equal to the branching ratio Br($H\rightarrow$$aa$$\rightarrow4\tau$); thus, the limits calculated on $\mu$ by the \texttt{combine}~\cite{springerlink:10.1140/epjc/s10052-011-1554-0} package are limits on this branching ratio.
 
-A 1-dimensional limit calculation with the $\text{CL}_{\text{s}}$ method is used to obtain observed and expected upper limits for each $M_{T}$ bin and pseudoscalar mass point. For each $M_{T}$ bin, limits are calculated for the signal strength parameter corresponding to the combination of all four signal channels (ggH, WH, VBF, and ZH).
+The $\text{CL}_{\text{s}}$ method is used to obtain observed and expected upper limits for each $M_{T}$ bin and pseudoscalar mass point. For each $M_{T}$ bin, limits are calculated for the signal strength parameter corresponding to the combination of all four signal channels (ggH, WH, VBF, and ZH).
 
 \subsection{Model-independent limits\label{sec:results-limits}}
 
