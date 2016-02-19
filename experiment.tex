@@ -447,3 +447,18 @@ When an event passes the L1 Trigger, the data is passed to the CMS DAQ system, w
 The HLT~\cite{Cittolin:578006} runs reconstruction and filtering algorithms on the event data. The reconstruction process builds physics objects (C++ data structures) from the raw data using a streamlined version of the CMS offline reconstruction software (which is described later in Section~\ref{sec:cms-reco}. The filtering process selects whether or not to keep an event, based on the criteria that classify it as having interesting physics content; these criteria define what is known as the HLT path, and they vary widely depending on the physics object or combinations of objects being selected. Many different HLT paths are used for the numerous physics searches carried out by the CMS experiment. One example of an HLT path is a single-muon trigger that stores events if they contain at least one muon with $p_T$ $>$ 24 GeV and whose isolation -- measured by summing the pixel tracks and calorimeter energy deposits in a cone of fixed radius about the direction of the muon's reconstructed four-momentum -- is lower than some maximum cutoff. Other examples of HLT paths include selections on the $p_T$, isolation, and multiplicity of electrons and muons, the energy and multiplicity of jets, and the amount of missing transverse energy in an event.
 
 From the input rate of around 100 kHz from the L1 Trigger, the HLT ultimately reduces the rate of event processing to $\mathcal{O}$(100) Hz. Datasets of raw events passing the HLT are written to permanent storage and undergo further offline processing before they are ready for use in physics studies or for calibration and data monitoring.
+
+\section{Luminosity measurement\label{sec:cms-lumi}}
+% HF and pixel methods
+
+The CMS experiment has two different systems for measuring the luminosity delivered by the LHC. One relies on the forward calorimeter HF, while the other uses the pixel detector~\cite{CMS-PAS-LUM-13-001}. These two methods have different strengths and can be used as cross-checks for one another.
+
+The HF zero counting method calculates the average luminosity per bunch crossing to 1\% statistical accuracy by estimating the mean number of interactions per bunch crossing from the average number of empty HF towers. Because of its high accuracy and the fact that HF can operate even during unstable beam conditions, the official online luminosity measurement (i.e., measured while the detector is running) during Run I has been taken from the HF zero counting method.
+
+Offline measurements of luminosity are performed using information from the pixel system, which can only operate during stable beam conditions. The pixel-cluster counting method uses the average number of pixel clusters in a bunch crossing to calculate the instantaneous luminosity per bunch $L$ according to this formula:
+
+\begin{equation}
+L = \frac{\nu<n>}{\sigma_{vis}}
+\label{eq:luminositycalculation}
+\end{equation}
+where $\nu =$ 11246 Hz is the beam frequency, $<n>$ is the average number of pixel clusters per event, and $\sigma_{vis}$ is the visible cross-section for inelastic collisions. $\sigma_{vis}$ is calibrated via the Van der Meer scan technique, in which the two LHC beams are scanned across each other along the horizontal and vertical planes to measure the shape and overlap of the beams. Unlike the HF-based luminosity measurement, which is susceptible to calibration drifts due to various factors, such as changes in the PMT gains and the HF detector's nonlinear response with respect to pileup, the pixel-based luminosity measurement is stable over time.
