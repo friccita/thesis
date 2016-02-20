@@ -6,7 +6,7 @@ All the various components and subcomponents of the CMS detector form a geometri
 
 Two different classes of material definitions exist in DDL. Elementary materials correspond to elements of the periodic table and are identified by name, periodic table symbol, density, atomic number, and atomic weight. Definitions of composite materials are built by specifying their fractional composition in terms of elementary materials, or even other composite materials; the data structure allows one to customize the density associated with a particular composite material. The radiation length and hadronic interaction length of composite materials are calculated from the material definitions in the XML files; these parameters are needed ifor the modelling of particle interactions with detector components.
 
-Detector parts are defined by their material, their shape, and their position in the detector. The various types of 3-dimensional shapes (such as rectangular boxes, trapezoids, and cylinders) allowed in this package are based on the GEANT syntax. Various parameters such as angles and Cartesian coordinates encode a detector component's spatial position, often with respect to a larger structure of which it is a component. Algorithms from ADL, referred to as DDAlgorithms, can be used to position multiple copies of a detector component in a specific pattern, to represent symmetrical or repeating structures.
+Detector parts are defined by their material, their shape, and their position in the detector. The various types of 3-dimensional shapes (such as rectangular boxes, trapezoids, and cylinders) allowed in this package are based on the GEANT syntax. Various parameters such as angles and Cartesian coordinates encode a detector component's spatial position, often with respect to a larger structure of which it is a component. Algorithms from ADL, referred to as DDAlgorithms, are used to position multiple copies of a detector component in a specific pattern, to represent symmetrical or repeating structures.
 
 The rest of this chapter treats the projects involving the CMS pixel detector geometry description, in which I have participated.
 
@@ -62,7 +62,7 @@ The CMS geometry description currently has XML files that describe the Phase I p
 \item The composite material used to describe the Phase I portcard objects is the same material used to describe the portcard objects in the Run I geometry before the installation of the pilot system. This is clearly incorrect, and a new composite material needs to be declared that matches the average composition of the actual Phase I FPIX portcards and DC-DC converters.
 \end{itemize}
 
-I have been involved in this project since early 2015, and much of this work is still ongoing.
+I have been involved in this project , and much of this work is still ongoing.
 
 \begin{figure}[hbtp]
   \begin{center}
