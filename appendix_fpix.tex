@@ -10,14 +10,37 @@ Starting in the summer of 2012 until the extraction of the pixel detector in May
 \item \textbf{Dry air system:} To prevent humidity from damaging the sensitive electronics of the pixel detector, the interior of the cold box is supplied with room-temperature dry air from an air dryer via pipe lines leading into the boxes, while the humidity inside the boxes is monitored by dew point sensors at various positions.
 \end{itemize}
 
-I helped to prepare the cold boxes for transport to the lab and to set up all three of the above-listed systems to serve the cold boxes, as well as the power supply crates and DAQ systems to power and read-out respectively the forward pixel detector half-cylinders. Once the pixel detector was extracted and the half-cylinders and half-barrels were successfully installed in their respective cold boxes, the forward pixel team proceeded to tackle known longstanding problems with certain panels in the FPIX. Here is a brief list of the issues:
+I helped to prepare the cold boxes for transport to the lab and to set up all three of the above-listed systems to serve the cold boxes, as well as the power supply crates and DAQ systems to power and read-out respectively the forward pixel detector half-cylinders. Figure~\ref{fig:fpix-cleanroom} shows a photo of two of the cold boxes, as well as the power supply and DAQ crates and the cooling system.
+
+\begin{figure}[hbtp]
+  \begin{center}
+    \includegraphics[width=1.5\cmsFigWidth]{figures/fpix-cleanroom}
+    \caption{Photo of the pixel lab at the CMS experimental site, showing two of the FPIX cold boxes, with the system of cooling pipes in the back bringing water-glycol and C$_{6}$F$_{14}$ to cool the interior of the boxes, and the power supply and DAQ crates (blue) to the left for reading out one half-cylinder at a time.}
+    \label{fig:fpix-cleanroom}
+  \end{center}
+\end{figure}
+
+Once the pixel detector was extracted and the half-cylinders and half-barrels were successfully installed in their respective cold boxes, the forward pixel team proceeded to tackle known longstanding problems with certain panels in the FPIX. Here is a brief list of the issues:
 
 \begin{itemize}
-\item \textbf{Slow channels:} the analog signal from certain panels has a slow rise time, resulting in lost bandwidth.
-\item \textbf{A panel with one dead ROC:} this problem is insignificant and not worth the delicate operation of replacing the panel, so it was left alone.
+\item Panels needing replacement, due to showing no analog signal.
+\item ``Slow" channels: the analog signal from certain panels has a slow rise time, requiring investigation (see Figure~\ref{fig:fpix-slowchannel} for an illustration).
+\item Difficulty in programming several panels, requiring investigation.
+\item Inability to communicate with one analogy optical hybrid (AOH).
+\item The sense wires carrying digital and analog power voltages from the portcard to the panel had become disconnected and need to be reconnected.
+\item The connectors of the some of the optical fibres had got contaminated with dust particles and needed cleaning.
+\item A panel with one dead ROC. (This problem is insignificant and not worth the delicate operation of replacing the panel, so it was left alone.)
 \end{itemize}
 
-Many of these problems were traced to misaligned or dislodged cables that provide communication from the portcards to the panels, for various functions such as programming the ROCs and reading out analog signals. I participated in the diagnosis of these problems by assisting in reading out the analog signal coming from problematic panels at different points along the readout circuit, and by replacing malfunctioning portcards.
+\begin{figure}[hbtp]
+  \begin{center}
+    \includegraphics[width=1.5\cmsFigWidth]{figures/fpix-slowchannel-scope}
+    \caption{Oscilloscope reading of the shape of the analog header signal from a normally-functioning channel (black curve) compared to a ``slow" channel (blue curve). Note the lack of a clean drop at the beginning of the blue curve's header signal, and the slow rise time at the end.}
+    \label{fig:fpix-slowchannel}
+  \end{center}
+\end{figure}
+
+Several of the above problems were traced to misaligned or dislodged flex cables that provide communication from the portcards to the panels, for various functions such as programming the ROCs and reading out analog signals. In particular: the slow-channel issues, the difficulty with programming certain panels, and faulty communication with one of the AOH's were all fixed by correcting the alignment of these flex cables in their connectors. I participated in the diagnosis of these problems by assisting in reading out the analog signal coming from problematic panels at different points along the readout circuit, and by replacing portcards when necessary. I also helped to clean out the optical fibre connectors and took week-long shifts to monitor the condition of the pixel half-cylinders in their cold-boxes.
 
 After all the repairs had been performed, including the replacement of certain panels, the FPIX calibration sequence was performed on each half-cylinder individually. This set of calibration procedures programs and optimizes the various parameters of the FPIX readout system (illustrated schematically in Figure~\ref{fig:cms-pixel-readout}); a treatment of these calibration procedures is beyond the scope of this dissertation, but a detailed description can be found in this source~\cite{CMS-pixel-calibrations}.
 
