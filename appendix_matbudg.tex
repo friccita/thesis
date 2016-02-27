@@ -55,16 +55,16 @@ During the next long shutdown of the LHC scheduled for 2018, the CMS detector wi
 The CMS geometry description currently has XML files that describe the Phase I pixel geometry and material. The barrel pixel part is mostly accurate aside from a few minor changes involving the dimensions of some support structures and the addition of aluminium cabling in some regions. However, the forward pixel part is very inaccurate and needs significant updating in order to represent the actual upgraded components that will be installed. The main challenges are the following:
 
 \begin{itemize}
-\item The current description of the FPIX support rings are flat, uniform rings, whereas the actual support rings have a zigzagging shape (see Figure~\ref{fig:phaseI_diskcomparison}). This is extremely difficult to render using the shapes allowed in DDL. A tentative solution is being developed and tested, in which a series of ``infinitesimally" thin blocks are positioned in the form of a zigzag-shaped ring using a DDAlgorithm that gives each block an appropriate displacement along z as a function of $\phi$. Figure~\ref{fig:phaseI_disksolution} illustrates this proposed solution.
-\item The zigzag pattern of the blades in the rings is incorrect for some of the rings, as they do not have the proper symmetry about the y axis. Comparisons with the blueprints of the actual Phase I FPIX blades in their disks are currently underway to determine the correct symmetry.
+\item The geometrical arrangement and symmetry of the FPIX blades have been found to be fundamentally incorrect. This is arguably the most critical issue with the Phase 1 FPIX description, since the positions of the pixel sensors in simulation are determined by the position of the blades. Comparisons with the blueprints of the actual Phase I FPIX blades in their disks to determine the correct arrangement are currently underway, together with efforts to correct the positioning of the blades in the detector description code.
+\item The FPIX support rings are currently modelled by flat, uniform rings in simulation, whereas the actual support rings have a zigzagging shape (see Figure~\ref{fig:phaseI_diskcomparison}). To achieve a more accurate description of the material budget, the shape of the rings needs to be corrected. These shapes are, however, extremely difficult to render using the shapes allowed in DDL. A tentative solution is being developed and tested, in which a series of ``infinitesimally" thin blocks are positioned in the form of a zigzag-shaped ring using a DDAlgorithm that gives each block an appropriate displacement along z as a function of $\phi$. Figure~\ref{fig:phaseI_disksolution} illustrates this proposed solution.
 \item In simulation, the endcap disks on the +z side are obtained by rotating the -z disks about the y axis, whereas the actual Phase I disks have a mirror symmetry about the xy plane instead.
-\item The shapes of the modules and the blades need to be refined, as they currently have very rough and basic shapes in the simulation (see Figure~\ref{fig:phaseI_bladecomparison}).
+\item The modules and the blades currently have very rough and basic shapes in the simulation (see Figure~\ref{fig:phaseI_bladecomparison}); the dimensions and positions of the modules need to be checked for accuracy.
 \item The composite material used to describe the Phase I portcard objects is the same material used to describe the portcard objects in the Run I geometry before the installation of the pilot system. This is clearly incorrect, and a new composite material needs to be declared that matches the average composition of the actual Phase I FPIX portcards and DC-DC converters.
 \end{itemize}
 
 Since January 2015 and continuing into my postdoctoral position, I have been the convener of the CMS tracker material budget group, overseeing any tasks that involve changes to the geometry/material description or studies of the tracker structure in data. I have been directly involved in updating the Phase I pixel geometry description, as well as coordinating the other individuals involved in this effort, and much of this work is still ongoing. In particular, I designed the solution shown in Figure~\ref{fig:phaseI_disksolution} for representing the zigzag-shaped FPIX support rings, which is still being tested and refined, and I am developing a new simulated material to represent the Phase I FPIX supply tube electronics. I am communicating with the engineers who are building the Phase I FPIX and BPIX components, to gather the necessary information about their dimensions and material composition in order to represent them accurately in the simulated description.
 
-Also, I am overseeing a group who are updating a software package for reconstructing and analyzing nuclear interaction vertices, in order to use reconstructed nuclear interaction vertices in the tracker material to image the structure of the tracker, measure the positions of tracker structures and the beam-pipe, and validate the geometry description in simulation. My contribution to this effort consists of technical support with software and providing a point of contact with and the tracking algorithm experts and pixel detector operations group.
+Also, I am overseeing a group who are updating a software package for reconstructing and analyzing nuclear interaction vertices, in order to use reconstructed nuclear interaction vertices in the tracker material to image the structure of the tracker, measure the positions of tracker structures and the beam-pipe (see Figure~\ref{fig:NI-beampipe-image}), and validate the geometry description in simulation. My contribution to this effort consists of technical support with software and providing a point of contact with and the tracking algorithm experts and pixel detector operations group.
 
 \begin{figure}[hbtp]
   \begin{center}
@@ -87,5 +87,13 @@ Also, I am overseeing a group who are updating a software package for reconstruc
     \includegraphics[width=2.0\cmsFigWidth]{figures/phaseI_bladecomparison}
     \caption{Comparison of the shape of the Phase I FPIX blades and modules in simulation (\cmsLeft) and in the actual detector being constructed (\cmsRight).}
     \label{fig:phaseI_bladecomparison}
+  \end{center}
+\end{figure}
+
+\begin{figure}[hbtp]
+  \begin{center}
+    \includegraphics[width=1.5\cmsFigWidth]{figures/NI-beampipe-image}
+    \caption{Cross-sectional view of the beam pipe (dark circle at radius 2.25 cm) surrounded by support structures of the barrel pixel detector, imaged with reconstructed nuclear interaction vertices in data from 13-TeV proton-proton collisions in 2015.~\cite{CMS:nuclearinteractions}}
+    \label{fig:NI-beampipe-image}
   \end{center}
 \end{figure}
