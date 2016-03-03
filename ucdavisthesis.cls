@@ -966,10 +966,12 @@
   \relax
 \else
    \newpage % begin abstract on a new page
+   \pagenumbering{roman}
       \setcounter{UMIpagetemp}{\value{page}} % save the current page number
-      \setcounter{page}{1} %  number pages in the abstract starting at 1
-      \pagestyle{UMIheadings} % page numbers in upper right with surrounding dashes
-      \thispagestyle{empty} % no page number on the first page
+      \setcounter{page}{7} %  number pages in the abstract starting at 1
+      %\pagestyle{UMIheadings} % page numbers in upper right with surrounding dashes
+      \pagestyle{prelim} % page numbers in upper right with surrounding dashes
+      %\thispagestyle{empty} % no page number on the first page
    \begin{UMImargins}
       \begin{flushright}
          \renewcommand\baselinestretch{\@singlespacing}
@@ -990,6 +992,7 @@
    \pagestyle{thshead} % return to standard page headings
    % return the page counter to previous value
    \setcounter{page}{\value{UMIpagetemp}}
+   \pagenumbering{arabic}\pagestyle{thshead} %go back to arabic numerals
 \fi}
 \endinput
 %%
