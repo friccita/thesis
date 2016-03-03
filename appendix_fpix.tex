@@ -42,7 +42,31 @@ Once the pixel detector was extracted and the half-cylinders and half-barrels we
 
 Several of the above problems were traced to misaligned or dislodged flex cables that provide communication from the portcards to the panels, for various functions such as programming the ROCs and reading out analog signals. In particular: the slow-channel issues, the difficulty with programming certain panels, and faulty communication with one of the AOH's were all fixed by correcting the alignment of these flex cables in their connectors. I participated in the diagnosis of these problems by assisting in reading out the analog signal coming from problematic panels at different points along the readout circuit, and by replacing portcards when necessary. I also helped to clean out the optical fibre connectors and took week-long shifts to monitor the condition of the pixel half-cylinders in their cold-boxes.
 
-After all the repairs had been performed, including the replacement of certain panels, the FPIX calibration sequence was performed on each half-cylinder individually. This set of calibration procedures programs and optimizes the various parameters of the FPIX readout system (illustrated schematically in Figure~\ref{fig:cms-pixel-readout}); a treatment of these calibration procedures is beyond the scope of this dissertation, but a detailed description can be found in this source~\cite{CMS-pixel-calibrations}.
+Figure~\ref{fig:fpix-live-before} illustrates the fraction of live channels in the four FPIX disks at the end of Run 1, before the pixel detector was extracted. The problematic panels and ROCs can be seen as blank regions in the live channel display; roughly 16\% of the FPIX channels were not functional. After the repairs during the long shutdown, including the replacement of certain panels, the inactive channels in the FPIX were largely recovered, and the total live channel fraction increased from 84\% to more than 99.9\% after the repairs. The live channel displays for FPIX after the repairs are shown in Figure~\ref{fig:fpix-live-after}
+
+\begin{figure}[hbtp]
+  \begin{center}
+    \includegraphics[width=1.0\cmsFigWidth]{figures/FPIX-d1-mz-before}
+    \includegraphics[width=1.0\cmsFigWidth]{figures/FPIX-d2-mz-before}
+    \includegraphics[width=1.0\cmsFigWidth]{figures/FPIX-d1-pz-before}
+    \includegraphics[width=1.0\cmsFigWidth]{figures/FPIX-d1-pz-before}
+    \caption{Fraction of live channels in each of the four FPIX disks at the end of Run 1.}
+    \label{fig:fpix-live-before}
+  \end{center}
+\end{figure}
+
+\begin{figure}[hbtp]
+  \begin{center}
+    \includegraphics[width=1.0\cmsFigWidth]{figures/FPIX-d1-mz-after}
+    \includegraphics[width=1.0\cmsFigWidth]{figures/FPIX-d2-mz-after}
+    \includegraphics[width=1.0\cmsFigWidth]{figures/FPIX-d1-pz-after}
+    \includegraphics[width=1.0\cmsFigWidth]{figures/FPIX-d1-pz-after}
+    \caption{Fraction of live channels in each of the four FPIX disks after the repairs during the long shutdown.}
+    \label{fig:fpix-live-before}
+  \end{center}
+\end{figure}
+
+After all the planned repairs were completed, the FPIX calibration sequence was performed on each half-cylinder individually. This set of calibration procedures programs and optimizes the various parameters of the FPIX readout system (illustrated schematically in Figure~\ref{fig:cms-pixel-readout}); a treatment of these calibration procedures is beyond the scope of this dissertation, but a detailed description can be found in this source~\cite{CMS-pixel-calibrations}.
 
 \begin{figure}[hbtp]
   \begin{center}
